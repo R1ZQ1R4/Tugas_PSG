@@ -19,6 +19,7 @@
         }
         
         .icon {
+            margin-top: -8px;
             vertical-align: middle;
         }
         
@@ -27,11 +28,11 @@
         .icon.profil,
         .icon.setting,
         .icon.logOut {
-            width: 22px;
-            height: 22px;
+            width: 24px;
+            height: 24px;
             fill: #777777;
             margin-right: 5px;
-            stroke: #999999;
+            stroke: #777777;
         }
         
         .card .card-block {
@@ -104,18 +105,18 @@
                     </div>
                     <!--               isi menu-->
                     <div class="row">
-                        <div class="col-12 justify-content-center">
-                            <div class="border-full-1px border-me-4 rounded-circle mx-300 my-120 mb-1">
+                        <div class="col-12 justify-content-center my-140 mb-0">
+                            <div class="border-full-1px border-me-4 rounded-circle mb-2" style="max-width:45%">
                                 <img class="img-fluid rounded-circle" src="img/avatar/man.png" alt="profil-foto">
                             </div>
                         </div>
-                        <div class="col-12 justify-content-center mb-3">
-                            <h5 class="m-0 p-0">Username</h5>
+                        <div class="col-12 justify-content-center mb-4">
+                            <h5 class="m-0 p-0 size-110">Username</h5>
                         </div>
                         <div class="col-12 d-block">
                             <ul class="list-unstyled p-0 m-0" style="">
                                 <li class="bg-none px-1 border-full-1px border-left-0 border-right-0 border-me-6">
-                                    <a class="size-090 text-10 d-block container nav-link" href="#">
+                                    <a class="text-10 d-block container nav-link py-090" href="#">
                                         <svg class="icon home" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
 <path d="M57.863,26.632l-8.681-8.061V5.365h-10v3.921L29.182,0L0.502,26.632c-0.404,0.376-0.428,1.009-0.052,1.414
 	c0.375,0.404,1.008,0.427,1.414,0.052l3.319-3.082v33.349h16h16h16V25.015l3.319,3.082c0.192,0.179,0.437,0.267,0.681,0.267
@@ -123,13 +124,14 @@
 	 M23.182,56.365V35.302c0-0.517,0.42-0.937,0.937-0.937h10.126c0.517,0,0.937,0.42,0.937,0.937v21.063H23.182z M51.182,56.365h-14
 	V35.302c0-1.62-1.317-2.937-2.937-2.937H24.119c-1.62,0-2.937,1.317-2.937,2.937v21.063h-14V23.158l22-20.429l14.28,13.26
 	l5.72,5.311v0l2,1.857V56.365z"/>
-</svg> Home
+</svg> 
+                                    <span class="">Home</span>
 
                                     </a>
                                 </li>
 
                                 <li class="bg-none px-1 border-full-1px border-left-0 border-right-0 border-top-0 border-me-6">
-                                    <a class="size-090 text-10 d-block container nav-link" href="#">
+                                   <a class="text-10 d-block container nav-link py-090" href="#">
                                         <svg class="icon categories" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
 <g>
 	<circle fill="none"  stroke-width="3" stroke-miterlimit="10" cx="29" cy="39" r="6"/>
@@ -138,24 +140,26 @@
 <polygon fill="none"  stroke-width="3" stroke-miterlimit="10" points="44,18 54,18 54,63 10,63 10,18 20,18 "/>
 <path fill="none"  stroke-width="3" stroke-miterlimit="10" d="M22,24V11c0-5.523,4.477-10,10-10s10,4.477,10,10v13
 	"/>
-</svg> Categories
+</svg> <span>Categories</span>
 
                                     </a>
                                 </li>
 
                                 <li class="bg-none px-1 border-full-1px border-left-0 border-right-0 border-top-0 border-me-6">
-                                    <a class="size-090 text-10 d-block container nav-link" href="#">
-                                        <svg class="icon profil" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg> Profil
+                                    <a class="text-10 d-block container nav-link py-090" href="#">
+                                        <svg class="icon profil"version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+ <g>
+ <path d="M47,35h-5.927c2.998-3.705,4.92-8.677,4.92-13.13c0-8.243-6.706-14.949-14.949-14.949S16.094,13.627,16.094,21.87 c0,4.453,1.922,9.425,4.92,13.13H15c-2.732,0-5.248,1.373-6.729,3.672c-1.043,1.62-1.262,4.457-0.65,8.433l0.783,5.093 C8.817,54.891,11.276,57,14,57h34c2.724,0,5.183-2.109,5.597-4.802l0.783-5.093c0.612-3.976,0.393-6.813-0.65-8.433 C52.248,36.373,49.732,35,47,35z M51.62,51.895C51.361,53.578,49.703,55,48,55H14c-1.703,0-3.361-1.422-3.62-3.105l-0.783-5.093 c-0.52-3.381-0.394-5.883,0.355-7.046C11.063,38.03,12.951,37,15,37h7.876c2.372,2.204,5.19,3.616,8.167,3.616 s5.796-1.412,8.167-3.616H47c2.049,0,3.937,1.03,5.048,2.755c0.75,1.163,0.875,3.666,0.355,7.046L51.62,51.895z M44.094,21.87 c0,4.493-2.257,9.705-5.564,13.13c-0.342,0.354-0.694,0.687-1.057,1c-0.421,0.363-0.853,0.701-1.299,1 c-1.597,1.072-3.336,1.717-5.131,1.717S27.51,38.072,25.913,37c-0.446-0.299-0.878-0.637-1.299-1c-0.363-0.313-0.715-0.646-1.057-1 c-3.307-3.425-5.564-8.636-5.564-13.13c0-7.196,5.854-13.051,13.051-13.051S44.094,14.674,44.094,21.87z">
+</path>
+ </g>
+ </svg> <span>Profil</span>
 
                                     </a>
                                 </li>
 
 
                                 <li class="bg-none px-1 border-full-1px border-left-0 border-right-0 border-top-0 border-me-6">
-                                    <a class="size-090 text-10 d-block container nav-link" href="#">
+                                    <a class="text-10 d-block container nav-link py-090" href="#">
                                         <svg class="icon setting" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 54 54" style="enable-background:new 0 0 54 54;" xml:space="preserve">
 <g>
 	<path d="M51.22,21h-5.052c-0.812,0-1.481-0.447-1.792-1.197s-0.153-1.54,0.42-2.114l3.572-3.571
@@ -183,13 +187,13 @@
 		l-3.572,3.571c-1.148,1.148-1.476,2.794-0.854,4.294c0.621,1.5,2.016,2.432,3.64,2.432h5.052C51.65,23,52,23.35,52,23.78V30.22z"/>
 	<path d="M27,18c-4.963,0-9,4.037-9,9s4.037,9,9,9s9-4.037,9-9S31.963,18,27,18z M27,34c-3.859,0-7-3.141-7-7s3.141-7,7-7
 		s7,3.141,7,7S30.859,34,27,34z"/>
-                                            </g></svg> Setting
+                                            </g></svg> <span>Setting</span>
 
                                     </a>
                                 </li>
                                 <li class="bg-none px-1 border-full-1px border-left-0 border-right-0 border-top-0 border-me-4">
-                                    <a class="size-090 text-10 d-block container nav-link" href="#">
-                                        <svg class="icon logOut" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><g><path d="M10.612,55.383h61.427c1.339,0,2.421-1.081,2.421-2.417s-1.082-2.417-2.421-2.417H10.765l14.383-15.417   c0.945-0.942,0.945-2.474,0-3.417c-0.945-0.945-2.475-0.945-3.419,0L2,53.017l19.427,21.455c0.473,0.471,1.091,0.706,1.71,0.706   s1.237-0.235,1.71-0.706c0.945-0.946,0.945-2.476,0-3.421L10.612,55.383z"/><path d="M89.071,7.04H50.372c-5.336,0-9.676,4.337-9.676,9.667v21.759h4.838V16.707c0-2.662,2.169-4.835,4.838-4.835h38.699   c2.668,0,4.837,2.173,4.837,4.835v67.684c0,2.666-2.169,4.835-4.837,4.835H50.372c-2.668,0-4.838-2.169-4.838-4.835V67.469h-4.838   v16.922c0,5.334,4.34,9.67,9.676,9.67h38.699c5.336,0,9.676-4.336,9.676-9.67V16.707C98.747,11.377,94.407,7.04,89.071,7.04z"/></g></svg> Log out
+                                    <a class="text-10 d-block container nav-link py-090" href="#">
+                                        <svg class="icon logOut" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 90" ><g><path d="M10.612,55.383h61.427c1.339,0,2.421-1.081,2.421-2.417s-1.082-2.417-2.421-2.417H10.765l14.383-15.417   c0.945-0.942,0.945-2.474,0-3.417c-0.945-0.945-2.475-0.945-3.419,0L2,53.017l19.427,21.455c0.473,0.471,1.091,0.706,1.71,0.706   s1.237-0.235,1.71-0.706c0.945-0.946,0.945-2.476,0-3.421L10.612,55.383z"/><path d="M89.071,7.04H50.372c-5.336,0-9.676,4.337-9.676,9.667v21.759h4.838V16.707c0-2.662,2.169-4.835,4.838-4.835h38.699   c2.668,0,4.837,2.173,4.837,4.835v67.684c0,2.666-2.169,4.835-4.837,4.835H50.372c-2.668,0-4.838-2.169-4.838-4.835V67.469h-4.838   v16.922c0,5.334,4.34,9.67,9.676,9.67h38.699c5.336,0,9.676-4.336,9.676-9.67V16.707C98.747,11.377,94.407,7.04,89.071,7.04z"/></g></svg> <span>Log out</span>
 
                                     </a>
                                 </li>
