@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <title>Tugas 2</title>
+    <link rel="stylesheet" href="../../bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ex.css">
+    <link rel="stylesheet" href="css/media_ex.css">
+    <link rel="stylesheet" href="../../JSQ-animation/Swiper-master/dist/css/swiper.min.css">
+    <style SASS>
+        .row>div[class*='col-'] {
+            display: flex;
+            flex: 1 0 auto;
+        }
+        
+        .gutters-small {
+            margin: 0px -5px !important;
+        }
+        
+        .gutters-small-item {
+            padding: 0px 5px !important;
+        }
+        
+        .gutter-20.row {
+            margin-right: -10px;
+            margin-left: -10px;
+        }
+        
+        .gutter-20>[class^="col-"],
+        .gutter-20>[class^=" col-"] {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        
+        .mb-20px>[class^="col-"],
+        .mb-20px>[class^=" col-"] {
+            margin-bottom: 20px;
+        }
+        
+        .mr-list-20px>[class^="nav-item"],
+        .mr-list-20px>[class^="nav-item "] {
+            margin-right: 20px !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--   Navbar =================================================-->
+    <nav class="navbar navbar-inverse bg-inverse sticky-top">
+        <div class="container p-0 relative">
+            <div class="row navbar navbar-toggleable-sm">
+                <div class="col-md-2 col-12">
+                    <a class="navbar-brand" href="#">Tokoku</a>
+                    <div class="absolute" style=" right:0px;">
+                        <button class="navbar-toggler mx-3" style="height:40px" type="button" id="search-click">
+                            <img class="" href="# " src="img/search-icon.png ">
+                        </button>
+                        <button class="navbar-toggler" style="height:40px" type="button" id="burger">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="nava">
+                    <div class="col-12">
+                        <ul class="mr-list-20px navbar-nav my-2 my-md-0 float-md-right">
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" role="button" id="mega-menu-btn">Categories</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="" id="account-btn">Account</a>
+
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="# " data-toggle="modal" data-target="#exampleModal">Cart
+                            <span class="badge badge-danger badge-pill mx-1" style="min-width:30px;">
+                                0
+                            
+                            </span>
+                            </a>
+                            </li>
+                            <li class="hidden-sm-down ml-4">
+                                <button class="btn" id="search-click-list" style="background:none;">
+                                    <img class="" href="" src="img/search-icon.png ">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters collapse " id="searchform" style="">
+                <div class="col-12">
+                    <form action="" method="get" class="w-100 mt-3">
+                        <div class="row no-gutters search-group">
+                            <div class="col-12 col-md-11">
+                                <input type="search" name="search" placeholder="Search Here" class="search-input bg-inverse text-color-a0 col-12">
+                            </div>
+                            <div class="col-12 col-md-1 justify-content-center justify-content-md-end  mt-3 mt-md-0 ">
+                                <button type="submit" class="btn-search text-color-a0 bg-success">Go</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="text-white bg-color-a1 collapse" id="mega-menu">
+
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-2">
+                            <h5 class="text-uppercase font-weight-normal">Cloth</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="">
+                                <a href='#'>Jacket</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="mb-2">
+                            <h5 class="text-uppercase font-weight-normal">Cloth</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="">
+                                <a href='#'>Jacket</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="mb-2">
+                            <h5 class="text-uppercase font-weight-normal">Cloth</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="">
+                                <a href='#'>Jacket</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="mb-2">
+                            <h5 class="text-uppercase font-weight-normal">Cloth</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="">
+                                <a href='#'>Jacket</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="mb-2">
+                            <h5 class="text-uppercase font-weight-normal">Cloth</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="">
+                                <a href='#'>Jacket</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!--    Modal -->
+    <div class="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--    Header slide-->
+    <header class="container py-4 px-0">
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div id="slideshow " class="relative slideshow">
+                        <div class="relative">
+                            <img class="img-fluid " src="img/slider1.png">
+                            <div class="col-12 col-lg-6 py-2 px-4 bg-caption absolute caption-l ">
+                                <h3 class="font-size-xl-25 font-size-lg-2 font-size-md-25 font-size-15 mt-xl-4 mt-lg-2 mt-4 font-weight-normal">Styish and Elegant</h3>
+                                <h5 class="font-weight-normal font-size-xl-15 font-size-md-1 font-size-1  mt-lg-3">Follow the trend with our product</h5>
+                                <h2 class="font-weight-normal font-size-xl-35 font-size-lg-3 mt-lg-5 mt-3">Just $299<small>.98</small></h2>
+                                <button type="button" class="btn btn-outline-info btn-lg mt-xl-2 mt-md-1 mt-md-2 mt-sm-3 mt-2">SHOP NOW</button>
+                            </div>
+                            <div class="col-2 hidden-md-down py-2 pr-5 bg-caption absolute caption-r ">
+                                <h3 class="font-weight-normal mt-xl-4 mt-lg-2 ">Dress </h3>
+                                <h5 class="font-weight-normal font-size-xl-15 font-size-lg-1">Batik with floral motifs</h5>
+                                <h5 class="font-weight-normal font-size-xl-15 mt-lg-5">Color<br>
+                                    <small>Navy Blue</small></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="slideshow " class="relative slideshow">
+                        <div class="relative">
+                            <img class="img-fluid " src="img/slider1.png">
+                            <div class="col-12 col-lg-6 py-2 px-4 bg-caption absolute caption-l ">
+                                <h3 class="font-size-xl-25 font-size-lg-2 font-size-md-25 font-size-15 mt-xl-4 mt-lg-2 mt-4 font-weight-normal">Styish and Elegant</h3>
+                                <h5 class="font-weight-normal font-size-xl-15 font-size-md-1 font-size-1  mt-lg-3">Follow the trend with our product</h5>
+                                <h2 class="font-weight-normal font-size-xl-35 font-size-lg-3 mt-lg-5 mt-3">Just $299<small>.98</small></h2>
+                                <button type="button" class="btn btn-outline-info btn-lg mt-xl-2 mt-md-1 mt-md-2 mt-sm-3 mt-2">SHOP NOW</button>
+                            </div>
+                            <div class="col-2 hidden-md-down py-2 pr-5 bg-caption absolute caption-r ">
+                                <h3 class="font-weight-normal mt-xl-4 mt-lg-2 ">Dress </h3>
+                                <h5 class="font-weight-normal font-size-xl-15 font-size-lg-1">Batik with floral motifs</h5>
+                                <h5 class="font-weight-normal font-size-xl-15 mt-lg-5">Color<br>
+                                    <small>Navy Blue</small></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="slideshow " class="relative slideshow">
+                        <div class="relative">
+                            <img class="img-fluid " src="img/slider1.png">
+                            <div class="col-12 col-lg-6 py-2 px-4 bg-caption absolute caption-l ">
+                                <h3 class="font-size-xl-25 font-size-lg-2 font-size-md-25 font-size-15 mt-xl-4 mt-lg-2 mt-4 font-weight-normal">Styish and Elegant</h3>
+                                <h5 class="font-weight-normal font-size-xl-15 font-size-md-1 font-size-1  mt-lg-3">Follow the trend with our product</h5>
+                                <h2 class="font-weight-normal font-size-xl-35 font-size-lg-3 mt-lg-5 mt-3">Just $299<small>.98</small></h2>
+                                <button type="button" class="btn btn-outline-info btn-lg mt-xl-2 mt-md-1 mt-md-2 mt-sm-3 mt-2">SHOP NOW</button>
+                            </div>
+                            <div class="col-2 hidden-md-down py-2 pr-5 bg-caption absolute caption-r ">
+                                <h3 class="font-weight-normal mt-xl-4 mt-lg-2 ">Dress </h3>
+                                <h5 class="font-weight-normal font-size-xl-15 font-size-lg-1">Batik with floral motifs</h5>
+                                <h5 class="font-weight-normal font-size-xl-15 mt-lg-5">Color<br>
+                                    <small>Navy Blue</small></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+
+            <!-- If we need scrollbar -->
+
+        </div>
+    </header>
+
+
+    <!--   Main Content====================================================-->
+    <main class="container p-0 ">
+
+        <!--   New Item-->
+        <section class="mb-5 ">
+
+            <div class="row justify-content-center mb-4 ">
+                <h1 class="display-4 ">NEW ITEM</h1>
+            </div>
+
+            <div class="row no-gutters gutter-20 mb-20px ">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="card pt-2 w-100">
+                        <img src="img/Model-Free-PNG-Image.png " class="card-img- img-fluid " alt="product1 ">
+
+                        <div class="hover-item-invisible h-30 w-100 bg-caption text-center text-white font-size-05">
+                            <p class="font-size-xl-25 font-size-lg-2 font-size-md-15 font-size-sm-2 font-size-2 m-0 mb-1 mb-md-2 mb-xl-3">halo</p>
+                            <p class="font-size-xl-35 font-size-lg-3 font-size-md-2 font-size-3 m-0 mb-1 mb-md-2  mb-lg-3">$199.99</p>
+                            <div class="row justify-content-center ">
+                                <div class="btn-new-item btn btn-outline-info btn-sm w-25 mx-3 ">BUY</div>
+                                <div class="btn-new-item btn btn-outline-info btn-sm w-25 mx-3 ">INFO</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="card pt-2 w-100">
+                        <img src="img/fashion-1623084.jpg" class="card-img- img-fluid " alt="product1 ">
+
+                        <div class="hover-item-invisible h-30 w-100 bg-caption text-center text-white font-size-05">
+                            <p class="font-size-xl-25 font-size-lg-2 font-size-md-15 font-size-sm-2 font-size-2 m-0 mb-1 mb-md-2 mb-xl-3">halo</p>
+                            <p class="font-size-xl-35 font-size-lg-3 font-size-md-2 font-size-3 m-0 mb-1 mb-md-2  mb-lg-3">$199.99</p>
+                            <div class="row justify-content-center ">
+                                <div class="btn-new-item btn btn-outline-info btn-sm w-25 mx-3 ">BUY</div>
+                                <div class="btn-new-item btn btn-outline-info btn-sm w-25 mx-3 ">INFO</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="card pt-2 w-100">
+                        <img src="img/fashion-1623086.jpg" class="card-img- img-fluid " alt="product1 ">
+
+                        <div class="hover-item-invisible h-30 w-100 bg-caption text-center text-white font-size-05">
+                            <p class="font-size-xl-25 font-size-lg-2 font-size-md-15 font-size-sm-2 font-size-2 m-0 mb-1 mb-md-2 mb-xl-3">halo</p>
+                            <p class="font-size-xl-35 font-size-lg-3 font-size-md-2 font-size-3 m-0 mb-1 mb-md-2  mb-lg-3">$199.99</p>
+                            <div class="row justify-content-center ">
+                                <div class="btn-new-item btn btn-outline-info btn-sm w-25 mx-3 ">BUY</div>
+                                <div class="btn-new-item btn btn-outline-info btn-sm w-25 mx-3 ">INFO</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="card pt-2 w-100">
+                        <img src="img/fashion-1623088.jpg" class="card-img- img-fluid " alt="product1 ">
+
+                        <div class="hover-item-invisible h-30 w-100 bg-caption text-center text-white font-size-05">
+                            <p class="font-size-xl-25 font-size-lg-2 font-size-md-15 font-size-sm-2 font-size-2 m-0 mb-1 mb-md-2 mb-xl-3">halo</p>
+                            <p class="font-size-xl-35 font-size-lg-3 font-size-md-2 font-size-3 m-0 mb-1 mb-md-2  mb-lg-3">$199.99</p>
+                            <div class="row justify-content-center ">
+                                <div class="btn-new-item btn btn-outline-info btn-sm w-25 mx-3 ">BUY</div>
+                                <div class="btn-new-item btn btn-outline-info btn-sm w-25 mx-3 ">INFO</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="card pt-2 w-100">
+                        <img src="img/Model-PNG-HD.png" class="card-img- img-fluid " alt="product1 ">
+
+                        <div class="hover-item-invisible h-30 w-100 bg-caption text-center text-white font-size-05">
+                            <p class="font-size-xl-25 font-size-lg-2 font-size-md-15 font-size-sm-2 font-size-2 m-0 mb-1 mb-md-2 mb-xl-3">halo</p>
+                            <p class="font-size-xl-35 font-size-lg-3 font-size-md-2 font-size-3 m-0 mb-1 mb-md-2  mb-lg-3">$199.99</p>
+                            <div class="row justify-content-center ">
+                                <div class="btn-new-item btn btn-outline-info btn-sm w-25 mx-3 ">BUY</div>
+                                <div class="btn-new-item btn btn-outline-info btn-sm w-25 mx-3 ">INFO</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div class="card pt-2 w-100">
+                        <img src="img/Model.png" class="card-img- img-fluid " alt="product1 ">
+
+                        <div class="hover-item-invisible h-30 w-100 bg-caption text-center text-white font-size-05">
+                            <p class="font-size-xl-25 font-size-lg-2 font-size-md-15 font-size-sm-2 font-size-2 m-0 mb-1 mb-md-2 mb-xl-3">halo</p>
+                            <p class="font-size-xl-35 font-size-lg-3 font-size-md-2 font-size-3 m-0 mb-1 mb-md-2  mb-lg-3">$199.99</p>
+                            <div class="row justify-content-center ">
+                                <div class="btn-new-item btn btn-outline-info btn-sm w-25 mx-3 ">BUY</div>
+                                <div class="btn-new-item btn btn-outline-info btn-sm w-25 mx-3 ">INFO</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center ">
+                <div class="col-12 col-md-4 col-lg-3 col-xl-2 ">
+                    <a href="# " class="btn btn-secondary btn-block ">View All</a>
+                </div>
+            </div>
+        </section>
+
+        <!--   Banner -->
+        <section class="my-5 ">
+            <img class="img-fluid " href="# " src="img/banner1.png " alt="banner1 ">
+        </section>
+
+        <!--   Grid Mostview-->
+        <section class="mb-5 ">
+
+            <div class="row justify-content-center mb-4 ">
+                <h1 class="display-4 ">MOST VIEW</h1>
+            </div>
+
+            <div class="row no-gutters gutter-20 ">
+                <div class="col-12 col-md-6 ">
+                    <div class="row no-gutters gutter-20 mb-20px ">
+                        <div class="col-12 height-400px ">
+                            <div class="d-flex align-items-center justify-content-center bg-color-a4 w-100 hovereffect1 ">
+                                <img class="img-fluid " src="img/product/coat.png" alt=" " />
+                                <div class="overlay d-flex justify-content-center">
+
+                                    <h2>Judul</h2>
+
+                                    <div class="d-flex align-self-center">
+                                        <a class="info" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-8 height-400px ">
+                            <div class="d-flex align-items-center justify-content-center bg-color-a1 w-100 hovereffect1 ">
+                                <img class="img-fluid " src="img/product/Womens-Shoes-psd46358.png " alt=" " />
+                                <div class="overlay d-flex justify-content-center">
+
+                                    <h2>Judul</h2>
+
+                                    <div class="d-flex align-self-center">
+                                        <a class="info" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 height-400px ">
+                            <div class="d-flex justify-content-center align-items-center p-5 bg-color-a3 w-100 hovereffect1 ">
+                                <img class="img-fluid " src="img/product/ " alt=" " />
+                                <div class="overlay d-flex justify-content-center">
+
+                                    <h2>Judul</h2>
+
+                                    <div class="d-flex align-self-center">
+                                        <a class="info" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 height-400px ">
+                            <div class="d-flex justify-content-center align-items-center p-5 bg-color-a2 w-100 hovereffect1 ">
+                                <img class="img-fluid " src="img/product/trousers.png " alt=" " />
+                                <div class="overlay d-flex justify-content-center">
+
+                                    <h2>Judul</h2>
+
+                                    <div class="d-flex align-self-center">
+                                        <a class="info" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 height-400px ">
+                            <div class="d-flex justify-content-center align-items-center p-5 img-center bg-color-a4 w-100 hovereffect1 ">
+                                <img class="img-fluid " src="img/product/ " alt=" " />
+                                <div class="overlay d-flex justify-content-center">
+
+                                    <h2>Judul</h2>
+
+                                    <div class="d-flex align-self-center">
+                                        <a class="info" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 ">
+                    <div class="row no-gutters gutter-20 mb-20px ">
+                        <div class="col-4 height-200px ">
+                            <div class="d-flex justify-content-center align-items-center p-2 img-center bg-color-a3 w-100 hovereffect1 ">
+                                <img class="img-fluid " src="img/product/y-jacket.png " alt=" " />
+                                <div class="overlay d-flex justify-content-center">
+
+                                    <h2>Judul</h2>
+
+                                    <div class="d-flex align-self-center">
+                                        <a class="info" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 height-200px ">
+                            <div class="d-flex justify-content-center align-items-center p-2 img-center bg-color-a2 w-100 hovereffect1 ">
+                                <img class="img-fluid " src="img/product/ " alt=" " />
+                                <div class="overlay d-flex justify-content-center">
+
+                                    <h2>Judul</h2>
+
+                                    <div class="d-flex align-self-center">
+                                        <a class="info" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 height-200px ">
+                            <div class="d-flex justify-content-center align-items-center p-2 img-center bg-color-a1 w-100 hovereffect1 ">
+                                <img class="img-fluid " src="img/product/ " alt=" " />
+                                <div class="overlay d-flex justify-content-center">
+
+                                    <h2>Judul</h2>
+
+                                    <div class="d-flex align-self-center">
+                                        <a class="info" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 height-200px ">
+                            <div class="d-flex justify-content-center align-items-center p-2 img-center bg-color-a4 w-100 hovereffect1 ">
+                                <img class="img-fluid " src="img/product/ " alt=" " />
+                                <div class="overlay d-flex justify-content-center">
+
+                                    <h2>Judul</h2>
+
+                                    <div class="d-flex align-self-center">
+                                        <a class="info" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 height-200px ">
+                            <div class="d-flex justify-content-center align-items-center p-2 img-center bg-color-a3 w-100 hovereffect1 ">
+                                <img class="img-fluid " src="img/product/ " alt=" " />
+                                <div class="overlay d-flex justify-content-center">
+
+                                    <h2>Judul</h2>
+
+                                    <div class="d-flex align-self-center">
+                                        <a class="info" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 height-200px ">
+                            <div class="d-flex justify-content-center align-items-center p-2 img-center bg-color-a2 w-100 hovereffect1">
+                                <img class="img-fluid " src="img/product/ " alt=" " />
+                                <div class="overlay d-flex justify-content-center">
+
+                                    <h2>Judul</h2>
+
+                                    <div class="d-flex align-self-center">
+                                        <a class="info" href="#">view more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 height-600px ">
+                            <div class="d-flex justify-content-center align-items-center p-2 img-center bg-color-a1 w-100 hovereffect1">
+                                <img class="img-fluid " src="img/product/ " alt="Product " />
+                                <div class="overlay d-flex justify-content-center">
+
+                                    <h2>Judul</h2>
+
+                                    <div class="d-flex align-self-center">
+                                        <a class="info" href="#">view more</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <!--   Footer==============================================-->
+    <footer class="bg-inverse pt-5 ">
+        <div class="container p-0 ">
+            <div class="row m-0 mb-5 pb-3 mb-20px ">
+                <div class="col-12 col-sm-6 col-md-3 text-white justify-content-center justify-content-sm-start text-sm-left text-center ">
+                    <ul class="list-unstyled ">
+                        <li>
+                            <h5>About</h5>
+                        </li>
+                        <li class="pt-3 ">
+                            <ul class="list-unstyled ">
+                                <li>About us</li>
+                                <li>Blog</li>
+                                <li>Career</li>
+                                <li>Seller Stories</li>
+                                <li>About us</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 text-white justify-content-center justify-content-sm-start text-sm-left text-center ">
+                    <ul class="list-unstyled ">
+                        <li>
+                            <h5>Help</h5>
+                        </li>
+                        <li class="pt-3 ">
+                            <ul class="list-unstyled ">
+                                <li>Terms and Conditions</li>
+                                <li>Privacy Policy</li>
+                                <li>Resolution Center</li>
+                                <li>Contact us</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 text-white justify-content-center justify-content-sm-start text-sm-left text-center ">
+                    <ul class="list-unstyled ">
+                        <li>
+                            <h5>Support</h5>
+                        </li>
+                        <li class="pt-3 ">
+                            <ul class="list-unstyled ">
+                                <li>Send Ticket</li>
+                                <li>Chat</li>
+                                <li>Costumer Service</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-3 text-white justify-content-center justify-content-sm-start text-sm-left text-center ">
+                    <ul class="list-unstyled ">
+                        <li>
+                            <h5>Follow</h5>
+                        </li>
+                        <li class="pt-3 ">
+                            <ul class="list-unstyled list-inline ">
+                                <li class="list-inline-item "><img src="img/icon/facebook.png " width="30px "></li>
+                                <li class="list-inline-item "><img src="img/icon/twitter.png " width="30px "></li>
+                                <li class="list-inline-item "><img src="img/icon/google-plus.png " width="30px "></li>
+                                <li class="list-inline-item "><img src="img/icon/linkedin.png " width="30px "></li>
+                                <li class="list-inline-item "><img src="img/icon/pinterest.png " width="30px "></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!--    copyright-->
+        <div class="border-top-footer ">
+            <div class="container ">
+                <div class="row m-0 ">
+                    <div class="col h-copyright ">
+                        <p class="text-white text-center " style="margin-top:25px ">&copy; PT. Ayo Techno Idea</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../../jquery/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="../../bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../../JSQ-animation/Swiper-master/dist/js/swiper.jquery.min.js" type="text/javascript"></script>
+    <script src="js/ex.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay: 3000,
+            autoplayDisableOnInteraction: false,
+            keyboardControl: true,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>

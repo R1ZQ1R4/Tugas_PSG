@@ -1,0 +1,386 @@
+@import color
+@import fontStack
+
+=vendor($property, $value)
+    -webkit-#{$property}: $value
+    -moz-#{$property}: $value
+    -ms-#{$property}: $value
+    -o-#{$property}: $value
+    $property: $value
+
+=border($width, $dash)
+    border-width: $width
+    border-style: $dash
+    
+=samesize($size)
+    width: $size
+    height: $size
+
+body
+    font-size: 16px
+    
+h1, h2, h3, h4, h5, h6
+    +text-color($mono-3)
+
+.icon-menu, .icon-cart, .icon-search
+    fill: $grey-100
+    @extend %opa-d-1
+    vertical-align: middle
+    &:hover, &:focus, &:active
+        @extend %opa-l-1
+    
+.icon-
+    &menu
+        +samesize(35px)
+    &cart
+        +samesize(25px)
+    &search
+        +samesize(30px)
+    
+.heart-icon, .view-icon, .review-icon
+    fill: $color-costum-3
+    height: 20px
+    width: 20px
+
+
+input[type="email"]::placeholder
+    color: $grey-400
+    
+    
+.star
+    fill: $color-costum-9
+
+.w-33
+    width: 33.333333%
+    
+font2
+    font-family: Raleway !important
+    
+%opa-
+    &d-
+        &1
+            opacity: 0.87 
+        
+        &2
+            opacity: 0.54
+        
+        &3
+            opacity: 0.38    
+
+    &divide
+        opacity: 0.12
+
+    &l-
+        &1
+            opacity: 1
+    
+        &2
+            opacity: 0.7
+        
+        &3
+            opacity: 0.5
+
+.border-full-
+    &1px
+        +border(1px, solid)
+    &2px
+        +border(2px, solid)
+    
+.border-me-
+    &1
+        +border-color($lightGreen-50)
+        @extend %opa-d-1
+    &2
+        +border-color($teal-700)
+    &3
+        +border-color(#fafafa)
+    &4
+        +border-color($grey-200)
+    &5
+        +border-color($teal-700)
+    &6
+        +border-color($grey-100)
+    &7
+        +border-color($color-costum-5)
+    &costum-2
+        +border-color($color-costum-2)
+    
+        
+.bg-
+    &me-
+        &1
+            +bg-color($teal-900)
+        &2
+            +bg-color($teal-800)
+        &3
+            +bg-color($pink-500)
+        &4
+            +bg-color($blue-300)
+        &5
+            +bg-color($color-costum-2)
+        &6
+            +bg-color($color-costum-5)
+        &7
+            +bg-color($color-costum-6)
+        &8
+            +bg-color($color-costum-8)
+        &9
+            +bg-color($grey-900)
+    
+    &danger2
+        +bg-color($color-costum-4)
+        
+    &success2
+        +bg-color($color-costum-3)
+        
+    &warning2
+        +bg-color($color-costum-9)
+    
+    &faded2
+        +bg-color($grey-300)
+        
+    &none
+        background: none
+        
+    &white
+        +bg-color($mono-f)
+    
+.nav-pills .nav-link
+    border-radius: 0
+    +text-color($color-costum-2)
+    &.active
+        +bg-color($color-costum-2)
+        +text-color($color-costum-6)
+
+.clock-icon-user, .calendar-icon-user
+    vertical-align: middle
+    height: 12px
+    width: 12px
+    fill: $mono-3
+    @extend %opa-d-2
+.text-
+    &breadcrumb1
+        +text-color($color-costum-8)
+        @extend %opa-l-3
+        
+    &costum-4
+        +text-color($color-costum-4)
+    
+    &costum-5
+        +text-color($grey-700)
+    &1
+        +text-color($grey-800)
+    &2
+        +text-color($lightGreen-50)
+        @extend %opa-d-1
+        
+        &:hover, &:focus, &:active
+            @extend %opa-l-1
+    &2none
+        +text-color($lightGreen-50)
+    &3
+        +text-color($red-500)
+    
+    &4
+        +text-color($teal-900)
+        @extend %opa-l-2
+        font-weight: bold
+        &:hover, &:focus, &:active
+            +text-color($teal-900)
+            @extend %opa-l-1
+    &5
+        span
+            +text-color($mono-f)
+            @extend %opa-d-1
+        &:hover, &:focus, &:active
+            +bg-color($teal-900)
+        &:hover span, &:focus span, &:active span
+            @extend %opa-l-1
+    
+    &6
+        +text-color($grey-900)
+        &:hover, &:focus, &:active
+            +text-color($teal-900)
+    
+    &7
+        +text-color(rgba(255, 255, 255, 0.5))
+        
+    &8
+        +text-color(rgba(255, 255, 255, 0.25))
+    
+    &9
+        +text-color($mono-3)
+    &10
+        +text-color($mono-3)
+        @extend %opa-d-2
+    &11
+        +text-color($color-costum-8)
+    &costum-6
+        +text-color($color-costum-6)
+        fill: $color-costum-6
+    &success
+    +text-color($green-600)
+    
+.btn-
+    &me-
+        &1
+            +border(1px, solid)
+            +colors(none, $teal-800, $teal-900)
+  
+            &:hover, &:active, &:focus
+
+                +colors($teal-800, $teal-900, $mono-f)
+            
+        &2
+            +border(1px, solid)
+            +colors($teal-800, $teal-900, $grey-100)
+            &:hover, &:active, &:focus
+                +colors($teal-900, $teal-800, $grey-50)
+
+
+.shadow-
+    &1
+        +vendor(box-shadow, inset 0 1px 2px $grey-800)
+        +vendor(box-shadow, 0 1px 2px $teal-900)
+
+    &2
+        +vendor(box-shadow, 0 -1px 5px $grey-400)
+    &3
+        +vendor(box-shadow, 0 2px 8px $mono-d)
+    &4
+        +vendor(box-shadow, inset 0 1px 2px $grey-800)
+        +vendor(box-shadow, 0 -2px 8px $mono-a)
+
+=size($this)
+    font-size: ($this+em)
+
+$font-size: 1
+$name-size: 100
+@while $font-size > 0.5
+    .size-0#{$name-size}
+        font-size: $font-size + em
+    $font-size: $font-size - 0.05
+    $name-size: $name-size - 5
+    
+    
+$font-size2: 3
+$name-size2: 300
+@while $font-size2 > 1
+    .size-#{$name-size2}
+        font-size: $font-size2 + em
+    $font-size2: $font-size2 - 0.1
+    $name-size2: $name-size2 - 10
+    
+//.size-
+//    &05 
+//        +size(0.5)
+//    &06 
+//        +size(0.6)
+//    &07 
+//        +size(0.7)
+//    &08 
+//        +size(0.8)
+//    &09 
+//        +size(0.9)
+//    &095 
+//        +size(0.95)
+//    &10 
+//        +size(1)
+//    &11 
+//        +size(1.1)
+//    &12 
+//        +size(1.2)
+//    &13 
+//        +size(1.3)
+//    &14 
+//        +size(1.4)
+//    &15 
+//        +size(1.5)
+//    &16 
+//        +size(1.6)
+//    &17 
+//        +size(1.7)
+//    &18 
+//        +size(1.8)
+//    &19 
+//        +size(1.9)
+//    &20 
+//        +size(2)
+       
+    
+.hide-menu-right-
+    &50
+        +vendor(transition-duration, 255ms !important)
+        +vendor(transform, translateX(-50%) !important)
+        +vendor(transition-timing-function, ease-in-out !important)
+    &100
+        +vendor(transition-duration, 255ms !important)
+        +vendor(transform, translateX(-100%) !important)
+        +vendor(transition-timing-function, ease-in-out !important)
+.rotate-
+    &45
+        +vendor(transform, rotate(45deg))
+        
+$p-size: 1
+$name-p-size: 100
+@while $p-size > 0.5
+    .p
+        &y-
+            &0#{$name-p-size}
+                padding-top: $p-size + em
+                padding-bottom: $p-size + em
+        &x-
+            &0#{$name-p-size}
+                padding-right: $p-size + em
+                padding-left: $p-size + em
+        
+        $p-size: $p-size - 0.05
+        $name-p-size: $name-p-size - 5
+           
+    
+    
+$p-size2: 3
+$name-p-size2: 300
+@while $p-size2 > 1
+    .p
+        &y-#{$name-p-size2}
+            padding-top: $p-size2 + em
+            padding-bottom: $p-size2 + em
+        &x-#{$name-p-size2}
+            padding-right: $p-size2 + em
+            padding-left: $p-size2 + em
+        
+        $p-size2: $p-size2 - 0.1
+        $name-p-size2: $name-p-size2 - 10
+        
+$m-size: 1
+$name-m-size: 100
+@while $m-size > 0.5
+    .m
+        &y-
+            &0#{$name-m-size}
+                margin-top: $m-size + em
+                margin-bottom: $m-size + em
+        &x-
+            &0#{$name-m-size}
+                margin-right: $m-size + em
+                margin-left: $m-size + em
+        
+        $m-size: $m-size - 0.05
+        $name-m-size: $name-m-size - 5
+           
+    
+    
+$m-size2: 3
+$name-m-size2: 300
+@while $m-size2 > 1
+    .m
+        &y-#{$name-m-size2}
+            margin-top: $m-size2 + em
+            margin-bottom: $m-size2 + em
+        &x-#{$name-m-size2}
+            margin-right: $m-size2 + em
+            margin-left: $m-size2 + em
+        
+        $m-size2: $m-size2 - 0.1
+        $name-m-size2: $name-m-size2 - 10

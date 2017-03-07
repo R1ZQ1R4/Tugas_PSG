@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mobile</title>
+    <link rel="stylesheet" href="../../bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../JSQ-animation/Swiper-master/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../../CSS-animation/animate-css/Animate.css_files/animate.min.css">
+    <link rel="stylesheet" href="css/ex2.css">
+    <link rel="stylesheet" href="css/media_ex.css">
+    <link rel="stylesheet" href="../../Project/_dasar/SASS/mobile.css">
+    <link href="../../SVG/icomoon_56_icons/style.css"  rel="stylesheet">
+
+    <style SASS>
+        .row>div[class*='col-'] {
+            display: flex;
+            flex: 1 0 auto;
+        }
+        
+        .review>div[class*='col-'] {
+            display: block;
+        }
+        
+        .gutters-small {
+            margin: 0px -5px !important;
+        }
+        
+        .gutters-small-item {
+            padding: 0px 5px !important;
+            margin-bottom: 10px;
+        }
+        
+        .gutter-20.row {
+            margin-right: -10px;
+            margin-left: -10px;
+        }
+        
+        .gutter-20>[class^="col-"],
+        .gutter-20>[class^=" col-"] {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        
+        .mb-20px>[class^="col-"],
+        .mb-20px>[class^=" col-"] {
+            margin-bottom: 20px;
+        }
+        
+        .mr-list-20px>[class^="nav-item"],
+        .mr-list-20px>[class^="nav-item "] {
+            margin-right: 20px !important;
+        }
+    </style>
+
+</head>
+
+<body style="">
+
+
+    <div class="relative w-100 mx-auto" style="max-width:576px;">
+        <div class="absolute w-100 " style="z-index:999;">
+
+            <!--           search ==========================================================-->
+            <div class="h-100 text-center over-hide animated d-none fixed w-100 p-3" id="search-form" style="max-width:576px;">
+
+                <button class="p-2 absolute text-3 bg-none border-0" style="top:20px; left:15px;" id="close-search">
+                    <span class="fa fa-arrow-left fa-2x "></span>
+                </button>
+
+                <h2 class="text-white display-4">Search</h2>
+                <form class="my-5">
+                    <div class="">
+                        <input id="search-mobile" type="text" placeholder="What're you looking for ?" class="bg-none text-center border-top-0 border-right-0 border-left-0 border-full-2px border-me-2 text-2">
+                    </div>
+                    <div class="mb-5">
+                        <h4 class="mb-5 text-2none">CATEGORY</h4>
+
+                        <label class="checkbox1">
+  <input type='checkbox'>
+  <span  class="btn btn-sm px-4 py-2 badge-pill text-white">
+  Hat</span>
+</label>
+                        <label class="checkbox1">
+  <input type='checkbox'>
+  <span  class="btn btn-sm px-4 py-2 badge-pill text-white">
+  Cloth</span>
+</label>
+                        <label class="checkbox1">
+  <input type='checkbox'>
+  <span  class="btn btn-sm px-4 py-2 badge-pill text-white">
+  Underwear</span>
+</label>
+                        <label class="checkbox1">
+  <input type='checkbox'>
+  <span  class="btn btn-sm px-4 py-2 badge-pill text-white">
+  Pants</span>
+</label>
+                        <label class="checkbox1">
+  <input type='checkbox'>
+  <span  class="btn btn-sm px-4 py-2 badge-pill text-white">
+  Jeans</span>
+</label>
+                        <label class="checkbox1">
+  <input type='checkbox'>
+  <span  class="btn btn-sm px-4 py-2 badge-pill text-white">
+  Jacket</span>
+</label>
+                        <label class="checkbox1">
+  <input type='checkbox'>
+  <span  class="btn btn-sm px-4 py-2 badge-pill text-white">
+  Sweater</span>
+</label>
+                        <label class="checkbox1">
+  <input type='checkbox'>
+  <span  class="btn btn-sm px-4 py-2 badge-pill text-white">
+  Shoes</span>
+</label>
+
+                        <label class="checkbox1">
+  <input type='checkbox'checked>
+  <span  class="btn btn-sm px-4 py-2 badge-pill text-white">
+  All Categories</span>
+</label>
+                    </div>
+                    <button type="submit" class="btn btn-me-2 btn-lg badge-pill px-5 d-inline-block">Enter</button>
+                </form>
+
+
+            </div>
+
+            <!--           menu right-->
+
+
+        </div>
+    </div>
+
+    <div class="relative p-0 mx-auto over-hide" style="max-width:576px;">
+
+        <div class="relative w-100" style="padding-left:50%">
+            <div class="fixed w-50 py-3 bg-color-a0 over-hide d-none animated hide-menu-0" style="max-width:288px;height:100vh;" id="menu-side-right">
+                <div class="pt-2 pb-3 relative">
+                    <button id="close-menu" class="absolute border-0 py-2 px-3 text-3 bg-none" style="top:0">
+                            <span class="fa fa-arrow-left fa-lg "></span>
+                        </button>
+                    <h3 class="float-right mr-4 font-weight-bold text-1">Menu</h3>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="px-4 py-2 border-full-1px border-me-2 border-right-0 border-left-0 border-top-0 bg-me-2 text-2">
+                        <span class="size-110">About</span> <i class="fa fa-angle-down float-right p-1"></i>
+                    </div>
+                    <div class="collapse show">
+                        <div class="px-3 py-1">
+                            <ul class="list-unstyled">
+                                <li class="size-0905">
+                                    <a href="" class="nav-link text-4">Link 1</a>
+                                </li>
+                                <li class="size-0905">
+                                    <a href="" class="nav-link text-4">Link 1</a>
+                                </li>
+                                <li class="size-0905">
+                                    <a href="" class="nav-link text-4">Link 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="px-4 py-2 border-full-1px border-me-2 border-right-0 border-left-0 border-top-0 bg-me-2 text-2">
+                        <span class="size-110"> Category </span> <i class="fa fa-angle-down float-right p-1"></i>
+                    </div>
+                    <div class="collapse">
+                        <div class="px-4 py-2">
+                            <ul class="list-unstyled">
+                                <li class="size-0905">
+                                    <a href="" class="nav-link text-4">Link 1</a>
+                                </li>
+                                <li class="size-0905">
+                                    <a href="" class="nav-link text-4">Link 1</a>
+                                </li>
+                                <li class="size-0905">
+                                    <a href="" class="nav-link text-4">Link 1</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div id="geser" class="over-hide hide-menu-0">
+            <div class="dim-background d-none animated absolute" style="overflow:hidden">
+
+
+            </div>
+
+
+
+            <!--       nav-->
+            <nav class="navbar sticky-top navbar-light bg-me-2 shadow-1">
+                <div class="container p-0">
+                    <div class="float-right">
+
+                        <button class="border-0 animated text-2 bg-none h-10 py-2 px-3" id="search">
+                            <span class="fa fa-search fa-lg"></span>
+                      
+                        </button>
+                        <button class="mx-1 py-2 px-3 border-0 text-2 bg-none">
+                            <span class="fa fa-user-o fa-lg"></span>
+                        </button>
+                        <button class="mx-1 navbar-toggler text-2 p-2 border-0" id="burger-menu">
+                <span class="fa fa-bars fa-lg"></span>
+                                </button>
+                    </div>
+                    <a class="navbar-brand text-2" href="#">Logo</a>
+                </div>
+            </nav>
+
+            <!--        header-->
+            <header class="swiper-container mb-5">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img class="img-fluid" src="https://dummyimage.com/1400x700/5d5de3/ffffff.jpg&text=banner1" alt="banner1" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-fluid" src="https://dummyimage.com/1400x700/5de36d/ffffff.jpg&text=banner2" alt="banner2" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-fluid" src="https://dummyimage.com/1400x700/e35de3/ffffff.jpg&text=banner3" alt="banner3" />
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </header>
+
+            <!--main content-->
+            <main class="mb-4">
+                <!--           Category -->
+                <section class="mb-4" style="overflow:hidden">
+                    <h5 class="text-center mb-3 text-uppercase">CATEGORY</h5>
+                    <div class="row no-gutters gutter-20 mb-20px">
+
+                        <div class="col-6  ">
+                            <div class="card w-100">
+                                <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
+                                <div class="p-2">
+                                    <p class="card-text text-center">Cloth</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 ">
+                            <div class="card w-100">
+                                <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
+                                <div class="p-2">
+                                    <p class="card-text text-center">Underwear</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 ">
+                            <div class="card w-100">
+                                <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
+                                <div class="p-2">
+                                    <p class="card-text text-center">Pants</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 ">
+                            <div class="card w-100">
+                                <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
+                                <div class="p-2">
+                                    <p class="card-text text-center">Jeans</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 ">
+                            <div class="card w-100">
+                                <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
+                                <div class="p-2">
+                                    <p class="card-text text-center">Sweater</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 ">
+                            <div class="card w-100">
+                                <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
+                                <div class="p-2">
+                                    <p class="card-text text-center">Jacket</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="d-none row no-gutters gutter-20 mb-20px animated" id="catalog">
+                        <div class="col-6 ">
+                            <div class="card w-100">
+                                <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
+                                <div class="p-2">
+                                    <p class="card-text text-center">Jacket</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="card w-100">
+                                <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
+                                <div class="p-2">
+                                    <p class="card-text text-center">Jacket</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="card w-100">
+                                <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
+                                <div class="p-2">
+                                    <p class="card-text text-center">Jacket</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="card w-100">
+                                <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
+                                <div class="p-2">
+                                    <p class="card-text text-center">Jacket</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="card w-100">
+                                <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
+                                <div class="p-2">
+                                    <p class="card-text text-center">Jacket</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="card w-100">
+                                <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
+                                <div class="p-2">
+                                    <p class="card-text text-center">Jacket</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="card w-100">
+                                <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
+                                <div class="p-2">
+                                    <p class="card-text text-center">Jacket</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="w-100 text-center">
+                        <button id="show-catalog" class="btn bg-none btn-me-1 badge-pill px-4">
+                                More
+                            </button>
+                        <button id="hide-catalog" class="btn bg-none btn-me-1 px-4 badge-pill d-none">
+                                Hide
+                            </button>
+                    </div>
+
+                </section>
+
+                <!--           promo-->
+                <section class="mb-5">
+                    <img class="img-fluid" src="https://dummyimage.com/800x800/f22789/000000.jpg&text=promo" alt="promo" />
+                </section>
+
+                <!--          recomended-->
+                <section class="mb-4">
+
+
+                    <div class="row no-gutters mb-4 justify-content-center">
+                        <h5 class="text-uppercase">New Sale</h5>
+                        <div class="col-12">
+                            <div class="swiper-container-recommended">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/70571d/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/7017ed/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/57eb9e/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/59eb59/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/4ea7ed/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/e4eb59/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/7057ed/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/0057ed/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/eb5959/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <a class="font-weight-normal size-0905 py-2 text-5 px-3 ml-auto mt-2 btn bg-me-2" href=""><span class="">See more &raquo;</span></a>
+
+                    </div>
+
+                    <!--               2 -->
+                    <div class="row no-gutters justify-content-center mb-4">
+                        <h5 class="text-uppercase">Most View</h5>
+                        <div class="col-12">
+                            <div class="swiper-container-recommended">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/e4eb59/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/7057ed/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/0057ed/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/eb5959/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/70571d/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/7017ed/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/57eb9e/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/59eb59/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/4ea7ed/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <a class="font-weight-normal size-0905 py-2 text-5 px-3 ml-auto mt-2 btn bg-me-2" href=""><span class="">See more &raquo;</span></a>
+                    </div>
+
+                    <!--                   By rating -->
+                    <div class="row no-gutters justify-content-center mb-4">
+                        <h5 class="text-uppercase">By Rating</h5>
+                        <div class="col-12">
+                            <div class="swiper-container-recommended">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/eb5959/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/e4eb59/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/7057ed/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/0057ed/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/70571d/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/7017ed/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="w-100 card" style="">
+                                            <img class="img-fluid" src="https://dummyimage.com/300x300/57eb9e/ffffff.jpg&text=product" alt="product" />
+                                            <div class="p-2">
+                                                <h6 class="size-0905">Title of Product Here</h6>
+                                                <img class="" src="#" alt="rating">
+                                                <div class="float-right">
+                                                    <h5 class="text-6 font-weight-bold">$122<small>.99</small></h5>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <a class="font-weight-normal size-0905 py-2 text-5 px-3 ml-auto mt-2 btn bg-me-2" href=""><span class="">See more &raquo;</span></a>
+                    </div>
+
+
+
+                </section>
+                <!--     banner  -->
+                <section class="mb-4">
+                    <img class="img-fluid" src="https://dummyimage.com/1400x300/46a5db/fff" alt="banner">
+                </section>
+            </main>
+
+            <!--footer-->
+            <footer class="bg-faded border-full-2px border-bottom-0 border-left-0 border-right-0 pt-2 border-me-5" style="">
+
+                <div class="w-100 border-full-1px border-right-0 border-top-0 border-left-0 border-me-4 menu-item2">
+                    <button role="button" class="border-0 font-weight-bold text-6 bg-none py-2 btn-block" style="">
+                        About
+                        <i class="fa fa-angle-down ml-1"></i>
+                        </button>
+                    <div class="collapse bg-white text-center">
+                        <ul class="list-unstyled">
+                            <li class="nav-item border-full-1px border-top-0 border-left-0 border-right-0 border-me-3">
+                                <a class="nav-link text-4 size-0905" href="#">Link</a>
+                            </li>
+                            <li class="nav-item border-full-1px border-top-0 border-left-0 border-right-0 border-me-3">
+                                <a class="nav-link text-4 size-0905" href="#">Link</a>
+                            </li>
+                            <li class="nav-item border-full-1px border-top-0 border-left-0 border-right-0 border-me-3">
+                                <a class="nav-link text-4 size-0905" href="#">Link</a>
+                            </li>
+                            <li class="nav-item border-full-1px border-top-0 border-left-0 border-right-0 border-me-3">
+                                <a class="nav-link text-4 size-0905" href="#">Link</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-100 py-2 border-full-1px border-right-0 border-top-0 border-left-0 border-me-4 menu-item2">
+                    <button role="button" class="border-0 font-weight-bold text-6 bg-none py-2 btn-block" style="">
+                        Help
+                        <i class="fa fa-angle-down ml-1"></i>
+                        </button>
+                    <div class="collapse bg-white text-center">
+                        <ul class="list-unstyled">
+                            <li class="nav-item border-full-1px border-top-0 border-left-0 border-right-0 border-me-3">
+                                <a class="nav-link text-4 size-0905" href="#">Link</a>
+                            </li>
+                            <li class="nav-item border-full-1px border-top-0 border-left-0 border-right-0 border-me-3">
+                                <a class="nav-link text-4 size-0905" href="#">Link</a>
+                            </li>
+                            <li class="nav-item border-full-1px border-top-0 border-left-0 border-right-0 border-me-3">
+                                <a class="nav-link text-4 size-0905" href="#">Link</a>
+                            </li>
+                            <li class="nav-item border-full-1px border-top-0 border-left-0 border-right-0 border-me-3">
+                                <a class="nav-link text-4 size-0905" href="#">Link</a>
+                            </li>
+                            <li class="nav-item border-full-1px border-top-0 border-left-0 border-right-0 border-me-3">
+                                <a class="nav-link text-4 size-0905" href="#">Link</a>
+                            </li>
+                            <li class="nav-item border-full-1px border-top-0 border-left-0 border-right-0 border-me-3">
+                                <a class="nav-link text-4 size-0905" href="#">Link</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="w-100 py-2 border-full-1px border-right-0 border-top-0 border-left-0 border-me-4 menu-item2">
+                    <button role="button" class="border-0 font-weight-bold text-6 bg-none py-2 btn-block" style="">
+                        Support
+                        <i class="fa fa-angle-down ml-1"></i>
+                        </button>
+                    <div class="collapse bg-white text-center">
+                        <ul class="list-unstyled">
+                            <li class="nav-item border-full-1px border-top-0 border-left-0 border-right-0 border-me-3">
+                                <a class="nav-link text-4 size-0905" href="#">Link</a>
+                            </li>
+                            <li class="nav-item border-full-1px border-top-0 border-left-0 border-right-0 border-me-3">
+                                <a class="nav-link text-4 size-0905" href="#">Link</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="d-flex border-full-1px border-right-0 border-top-0 border-left-0 border-me-2 justify-content-center py-2">
+                    <ul class="list-unstyled list-inline mt-3">
+                        <li class="list-inline-item mx-2">
+                            <a href="#"><img src="img/icon/facebook.png " width="30px "></a>
+                        </li>
+                        <li class="list-inline-item mx-2">
+                            <a href="#"><img src="img/icon/twitter.png " width="30px "></a>
+                        </li>
+                        <li class="list-inline-item mx-2">
+                            <a href="#"><img src="img/icon/google-plus.png " width="30px "></a>
+                        </li>
+                        <li class="list-inline-item mx-2">
+                            <a href="#"><img src="img/icon/linkedin.png " width="30px "></a>
+                        </li>
+                        <li class="list-inline-item mx-2">
+                            <a href="#"><img src="img/icon/pinterest.png " width="30px "></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="py-4 bg-me-2 shadow-2">
+                    <h6 class="size-080 text-center text-2none mt-2">
+                        &copy; 2017 ALL RIGHTS RESERVED. PT. AYO TECHNOIDEA
+                    </h6>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../../jquery/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="../../jquery/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../../bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+    <script src="../../JSQ-animation/Swiper-master/dist/js/swiper.jquery.min.js" type="text/javascript"></script>
+    <script src="js/ex_mobile.js" type="text/javascript"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay: 4000,
+            autoplayDisableOnInteraction: false,
+            keyboardControl: true,
+            loop: true
+        });
+
+        var swiper2 = new Swiper('.swiper-container-recommended', {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            autoplayDisableOnInteraction: false,
+            keyboardControl: true,
+            loop: true,
+            autoplay: 3000
+        });
+    </script>
+</body>
+
+</html>

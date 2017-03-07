@@ -1,0 +1,31 @@
+$p-size: 1
+$name-p-size: 100
+@while $p-size > 0.5
+    .p
+        &y-
+            &0#{$name-p-size}
+                padding-top: $p-size + em
+                padding-bottome: $p-size + em
+        &x-
+            &0#{$name-p-size}
+                padding-right: $p-size + em
+                padding-left: $p-size + em
+        
+    $p-size: $p-size - 0.05
+    $name-p-size: $name-p-size - 5
+           
+    
+    
+$p-size2: 3
+$name-p-size2: 300
+@while $p-size2 > 1
+    .p
+        &y-#{$name-p-size2}
+            padding-top: $p-size + em
+            padding-bottome: $p-size + em
+        &x-#{$name-p-size2}
+            padding-right: $p-size + em
+                padding-left: $p-size + em
+        
+    $p-size2: $p-size2 - 0.1
+    $name-p-size2: $name-p-size2 - 10

@@ -1,0 +1,100 @@
+@import reset
+@import color
+@import fontStack
+
+$animate : 300
+
+=vendor($property, $value)
+    -webkit-#{$property}: $value
+    -moz-#{$property}: $value
+    -ms-#{$property}: $value
+    -o-#{$property}: $value
+    $property: $value
+
+=vendor2($halo, $halo2)
+    -webkit-#{$halo}: $halo2
+    
+=border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius:    $radius
+    -ms-border-radius:     $radius
+    -o-border-radius:     $radius
+    border-radius: $radius
+
+=border($width, $dash)
+    border-width: $width
+    border-style: $dash
+    
+=btn1($radius, $bg-color, $border-color, $text-color, $width, $dash)
+    +vendor(border-radius, $radius)
+    +colors($bg-color, $border-color, $text-color)
+    +border($width, $dash)
+    
+=btn3()
+    halo
+
+
+body
+    +vendor2(property, zero)
+    font: $font-stack1
+    background-color: $mono-5
+    
+
+#box
+    +border-radius(5px)
+    
+.btn1
+    +btn1(10px, $deepPurple-500, $red-A100, $mono-f, 2px, dotted)
+
+        
+.btn2
+    +vendor(border-radius, 10px)
+    
+.btn3
+    
+.box1
+    @extend #box
+    background-color: $red-50
+    p
+        padding: 5px
+    
+.box2
+    @extend #box
+    background-color: $red-A700
+    
+.box3
+    @extend #box
+    background-color: $purple-500
+    
+article[role="main"]
+    float: left
+    width: 600px / 960px * 100%
+    
+.color
+    +colors($red-50, none, $mono-1)
+    
+.parent
+    +bg-color($red-500)
+    &:hover
+        halo: halohalo
+        b
+            zero: 0
+    &:focus
+        focus: this
+    a
+        +vendor(this, wrong)
+        &:before
+            pseudo: element
+        
+    &-wow
+        test: cool
+        
+.nested-properties
+    font:
+        family: 100
+        this: cool
+        wrong: it
+        
+    halo: value
+        property : good
+

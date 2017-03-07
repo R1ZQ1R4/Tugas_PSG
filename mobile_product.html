@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Product Name</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/ex2.css">
+    <link rel="stylesheet" href="css/media_ex.css">
+    <link rel="stylesheet" href="css/SASS/mobile.css">
+    <link rel="stylesheet" href="css/star-rating-svg.css">
+    <style SASS>
+        @media screen and (min-width: 0px) and (max-width: 240px) {
+            .logo {
+                display: none !important;
+            }
+        }
+        
+        .icon {
+            vertical-align: middle;
+        }
+        
+        .icon.home,
+        .icon.categories,
+        .icon.profil,
+        .icon.setting,
+        .icon.logOut {
+            width: 22px;
+            height: 22px;
+            fill: #777777;
+            margin-right: 5px;
+            stroke: #999999;
+        }
+        
+        .card .card-block {
+            height: 110px;
+            /*            overflow:auto;*/
+        }
+        
+        .card .card-block .judul {
+            margin-bottom: 6px;
+            max-height: 35px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            /*            overflow:auto;*/
+        }
+        
+        .row>div[class*='col-'] {
+            display: flex;
+            flex: 1 0 auto;
+        }
+        
+        .gutters-small {
+            margin: 0px -5px !important;
+        }
+        
+        .gutters-small-item {
+            padding: 0px 5px !important;
+        }
+        
+        .gutters-small-item2 {
+            padding: 0px 5px !important;
+            margin-bottom: 10px;
+        }
+        
+        .gutter-20.row {
+            margin-right: -10px;
+            margin-left: -10px;
+        }
+        
+        .gutter-20>[class^="col-"],
+        .gutter-20>[class^=" col-"] {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        
+        .mb-20px>[class^="col-"],
+        .mb-20px>[class^=" col-"] {
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="p-0 mx-auto w-100 over-hide bg-me-7" style="max-width:576px">
+        <!--        menu-->
+        <div class="fixed mx-auto w-100 d-none over-hide" id="side-menu" style="z-index:99; height:100vh; max-width:576px">
+            <div class="dim-background over-hide">
+                <!--             left menu-->
+                <div class="w-75 h-100 bg-white over-hide" style="max-width:230px">
+                    <!--              judul menu-->
+                    <div class="navbar bg-me-5 container relative w-100" style="height:60px;">
+                        <h5 class="py-055 text-costum-6" style="">Menu
+                            <a id="close-side-menu" class="absolute bg-none border-0" style="right:20px" href="">
+                                <svg class="text-costum-6" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+                            </a>
+                        </h5>
+                    </div>
+                    <!--               isi menu-->
+                    <div class="row">
+                        <div class="col-12 justify-content-center">
+                            <div class="border-full-1px border-me-4 rounded-circle mx-300 my-120 mb-1">
+                                <img class="img-fluid rounded-circle" src="img/avatar/man.png" alt="profil-foto">
+                            </div>
+                        </div>
+                        <div class="col-12 justify-content-center mb-3">
+                            <h5 class="m-0 p-0">Username</h5>
+                        </div>
+                        <div class="col-12 d-block">
+                            <ul class="list-unstyled p-0 m-0" style="">
+                                <li class="bg-none px-1 border-full-1px border-left-0 border-right-0 border-me-6">
+                                    <a class="size-090 text-10 d-block container nav-link" href="#">
+                                        <svg class="icon home" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+<path d="M57.863,26.632l-8.681-8.061V5.365h-10v3.921L29.182,0L0.502,26.632c-0.404,0.376-0.428,1.009-0.052,1.414
+	c0.375,0.404,1.008,0.427,1.414,0.052l3.319-3.082v33.349h16h16h16V25.015l3.319,3.082c0.192,0.179,0.437,0.267,0.681,0.267
+	c0.269,0,0.536-0.107,0.732-0.319C58.291,27.641,58.267,27.008,57.863,26.632z M41.182,7.365h6v9.349l-6-5.571V7.365z
+	 M23.182,56.365V35.302c0-0.517,0.42-0.937,0.937-0.937h10.126c0.517,0,0.937,0.42,0.937,0.937v21.063H23.182z M51.182,56.365h-14
+	V35.302c0-1.62-1.317-2.937-2.937-2.937H24.119c-1.62,0-2.937,1.317-2.937,2.937v21.063h-14V23.158l22-20.429l14.28,13.26
+	l5.72,5.311v0l2,1.857V56.365z"/>
+</svg> Home
+
+                                    </a>
+                                </li>
+
+                                <li class="bg-none px-1 border-full-1px border-left-0 border-right-0 border-top-0 border-me-6">
+                                    <a class="size-090 text-10 d-block container nav-link" href="#">
+                                        <svg class="icon categories" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<g>
+	<circle fill="none"  stroke-width="3" stroke-miterlimit="10" cx="29" cy="39" r="6"/>
+	<line fill="none"  stroke-width="3" stroke-miterlimit="10" x1="33" y1="43" x2="41" y2="51"/>
+</g>
+<polygon fill="none"  stroke-width="3" stroke-miterlimit="10" points="44,18 54,18 54,63 10,63 10,18 20,18 "/>
+<path fill="none"  stroke-width="3" stroke-miterlimit="10" d="M22,24V11c0-5.523,4.477-10,10-10s10,4.477,10,10v13
+	"/>
+</svg> Categories
+
+                                    </a>
+                                </li>
+
+                                <li class="bg-none px-1 border-full-1px border-left-0 border-right-0 border-top-0 border-me-6">
+                                    <a class="size-090 text-10 d-block container nav-link" href="#">
+                                        <svg class="icon profil" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg> Profil
+
+                                    </a>
+                                </li>
+
+
+                                <li class="bg-none px-1 border-full-1px border-left-0 border-right-0 border-top-0 border-me-6">
+                                    <a class="size-090 text-10 d-block container nav-link" href="#">
+                                        <svg class="icon setting" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 54 54" style="enable-background:new 0 0 54 54;" xml:space="preserve">
+<g>
+	<path d="M51.22,21h-5.052c-0.812,0-1.481-0.447-1.792-1.197s-0.153-1.54,0.42-2.114l3.572-3.571
+		c0.525-0.525,0.814-1.224,0.814-1.966c0-0.743-0.289-1.441-0.814-1.967l-4.553-4.553c-1.05-1.05-2.881-1.052-3.933,0l-3.571,3.571
+		c-0.574,0.573-1.366,0.733-2.114,0.421C33.447,9.313,33,8.644,33,7.832V2.78C33,1.247,31.753,0,30.22,0H23.78
+		C22.247,0,21,1.247,21,2.78v5.052c0,0.812-0.447,1.481-1.197,1.792c-0.748,0.313-1.54,0.152-2.114-0.421l-3.571-3.571
+		c-1.052-1.052-2.883-1.05-3.933,0l-4.553,4.553c-0.525,0.525-0.814,1.224-0.814,1.967c0,0.742,0.289,1.44,0.814,1.966l3.572,3.571
+		c0.573,0.574,0.73,1.364,0.42,2.114S8.644,21,7.832,21H2.78C1.247,21,0,22.247,0,23.78v6.439C0,31.753,1.247,33,2.78,33h5.052
+		c0.812,0,1.481,0.447,1.792,1.197s0.153,1.54-0.42,2.114l-3.572,3.571c-0.525,0.525-0.814,1.224-0.814,1.966
+		c0,0.743,0.289,1.441,0.814,1.967l4.553,4.553c1.051,1.051,2.881,1.053,3.933,0l3.571-3.572c0.574-0.573,1.363-0.731,2.114-0.42
+		c0.75,0.311,1.197,0.98,1.197,1.792v5.052c0,1.533,1.247,2.78,2.78,2.78h6.439c1.533,0,2.78-1.247,2.78-2.78v-5.052
+		c0-0.812,0.447-1.481,1.197-1.792c0.751-0.312,1.54-0.153,2.114,0.42l3.571,3.572c1.052,1.052,2.883,1.05,3.933,0l4.553-4.553
+		c0.525-0.525,0.814-1.224,0.814-1.967c0-0.742-0.289-1.44-0.814-1.966l-3.572-3.571c-0.573-0.574-0.73-1.364-0.42-2.114
+		S45.356,33,46.168,33h5.052c1.533,0,2.78-1.247,2.78-2.78V23.78C54,22.247,52.753,21,51.22,21z M52,30.22
+		C52,30.65,51.65,31,51.22,31h-5.052c-1.624,0-3.019,0.932-3.64,2.432c-0.622,1.5-0.295,3.146,0.854,4.294l3.572,3.571
+		c0.305,0.305,0.305,0.8,0,1.104l-4.553,4.553c-0.304,0.304-0.799,0.306-1.104,0l-3.571-3.572c-1.149-1.149-2.794-1.474-4.294-0.854
+		c-1.5,0.621-2.432,2.016-2.432,3.64v5.052C31,51.65,30.65,52,30.22,52H23.78C23.35,52,23,51.65,23,51.22v-5.052
+		c0-1.624-0.932-3.019-2.432-3.64c-0.503-0.209-1.021-0.311-1.533-0.311c-1.014,0-1.997,0.4-2.761,1.164l-3.571,3.572
+		c-0.306,0.306-0.801,0.304-1.104,0l-4.553-4.553c-0.305-0.305-0.305-0.8,0-1.104l3.572-3.571c1.148-1.148,1.476-2.794,0.854-4.294
+		C10.851,31.932,9.456,31,7.832,31H2.78C2.35,31,2,30.65,2,30.22V23.78C2,23.35,2.35,23,2.78,23h5.052
+		c1.624,0,3.019-0.932,3.64-2.432c0.622-1.5,0.295-3.146-0.854-4.294l-3.572-3.571c-0.305-0.305-0.305-0.8,0-1.104l4.553-4.553
+		c0.304-0.305,0.799-0.305,1.104,0l3.571,3.571c1.147,1.147,2.792,1.476,4.294,0.854C22.068,10.851,23,9.456,23,7.832V2.78
+		C23,2.35,23.35,2,23.78,2h6.439C30.65,2,31,2.35,31,2.78v5.052c0,1.624,0.932,3.019,2.432,3.64
+		c1.502,0.622,3.146,0.294,4.294-0.854l3.571-3.571c0.306-0.305,0.801-0.305,1.104,0l4.553,4.553c0.305,0.305,0.305,0.8,0,1.104
+		l-3.572,3.571c-1.148,1.148-1.476,2.794-0.854,4.294c0.621,1.5,2.016,2.432,3.64,2.432h5.052C51.65,23,52,23.35,52,23.78V30.22z"/>
+	<path d="M27,18c-4.963,0-9,4.037-9,9s4.037,9,9,9s9-4.037,9-9S31.963,18,27,18z M27,34c-3.859,0-7-3.141-7-7s3.141-7,7-7
+		s7,3.141,7,7S30.859,34,27,34z"/>
+                                            </g></svg> Setting
+
+                                    </a>
+                                </li>
+                                <li class="bg-none px-1 border-full-1px border-left-0 border-right-0 border-top-0 border-me-4">
+                                    <a class="size-090 text-10 d-block container nav-link" href="#">
+                                        <svg class="icon logOut" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><g><path d="M10.612,55.383h61.427c1.339,0,2.421-1.081,2.421-2.417s-1.082-2.417-2.421-2.417H10.765l14.383-15.417   c0.945-0.942,0.945-2.474,0-3.417c-0.945-0.945-2.475-0.945-3.419,0L2,53.017l19.427,21.455c0.473,0.471,1.091,0.706,1.71,0.706   s1.237-0.235,1.71-0.706c0.945-0.946,0.945-2.476,0-3.421L10.612,55.383z"/><path d="M89.071,7.04H50.372c-5.336,0-9.676,4.337-9.676,9.667v21.759h4.838V16.707c0-2.662,2.169-4.835,4.838-4.835h38.699   c2.668,0,4.837,2.173,4.837,4.835v67.684c0,2.666-2.169,4.835-4.837,4.835H50.372c-2.668,0-4.838-2.169-4.838-4.835V67.469h-4.838   v16.922c0,5.334,4.34,9.67,9.676,9.67h38.699c5.336,0,9.676-4.336,9.676-9.67V16.707C98.747,11.377,94.407,7.04,89.071,7.04z"/></g></svg> Log out
+
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--       Navbar =====================================-->
+        <nav class="navbar sticky-top bg-me-5 container mx-auto w-100 clearfix" style="z-index:1; max-width:576px; height:60px">
+            <div class="row">
+                <!--               menu btn-->
+                <div class="col-4 align-self-center justify-content-start">
+                    <button class="border-0 bg-none px-2 pt-1 text-2" id="menu-btn">
+                       <svg class="icon-menu" viewBox="0 0 24 24"xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+                   </button>
+                </div>
+                <!--                logo-->
+                <div class="col-4 justify-content-center align-self-center text-center logo">
+                    <a class="text-2" href="#">Logo / link</a>
+                </div>
+                <!--                right button-->
+                <div class="col-4 justify-content-end">
+
+                    <div class="d-flex align-self-center">
+
+                        <button class="border-0 bg-none px-3 pt-1 text-2" id="cart-btn">
+                       <svg class="icon-cart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+<path d="M31.914 5.4l-2.914 11.6c0 0.139-0.028 0.27-0.078 0.389-0.102 0.24-0.293 0.432-0.532 0.533-0.12 0.051-0.252 0.078-0.39 0.078h-19l0.8 4h17.2c0.553 0 1 0.447 1 1s-0.447 1-1 1h-18c-0.553 0-1-0.447-1-1l-3.8-19h-3.2c-0.552 0-1-0.448-1-1s0.448-1 1-1h4c0.553 0 1 0.448 1 1l0.2 1h24.8c0.553 0 1 0.448 1 1 0 0.143-0.032 0.277-0.086 0.4zM8.6 16h3.4v-10h-5.4l2 10zM18 6h-5v10h5v-10zM24 6h-5v10h5v-10zM25 6v10h2.253l2.533-10h-4.786zM11 26c1.657 0 3 1.344 3 3s-1.343 3-3 3-3-1.344-3-3 1.343-3 3-3zM11 30c0.553 0 1-0.447 1-1s-0.447-1-1-1-1 0.447-1 1 0.447 1 1 1zM25 26c1.657 0 3 1.344 3 3s-1.343 3-3 3-3-1.344-3-3 1.343-3 3-3zM25 30c0.553 0 1-0.447 1-1s-0.447-1-1-1-1 0.447-1 1 0.447 1 1 1z"></path>
+</svg>
+                   </button>
+
+                        <button class="border-0 bg-none px-2 pt-1 text-2" id="search-btn">
+                       <svg class="icon-search"version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+<path d="M19.427 20.427c-1.39 0.99-3.090 1.573-4.927 1.573-4.694 0-8.5-3.806-8.5-8.5s3.806-8.5 8.5-8.5c4.694 0 8.5 3.806 8.5 8.5 0 1.837-0.583 3.537-1.573 4.927l5.585 5.585c0.55 0.55 0.546 1.431-0 1.976l-0.023 0.023c-0.544 0.544-1.431 0.546-1.976 0l-5.585-5.585zM14.5 20c3.59 0 6.5-2.91 6.5-6.5s-2.91-6.5-6.5-6.5c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5v0z"></path>
+</svg>
+
+                   </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
+        <div class="relative w-100">
+            <div class="absolute w-100 d-none" id="search-form">
+                <form method="post" class="input-group subscribe w-100" action="">
+                    <input type="email" placeholder="What are you looking for ?" class="form-control border-full-1px border-right-0 border-left-0 border-me-4 bg-white rounded-0" style="height: 45px">
+                    <span class="input-group-btn">
+                                <button class="btn bg-me-3 font-weight-bold text-white border-0 rounded-0" type="button">Search</button>
+                            </span>
+                </form>
+            </div>
+        </div>
+        <!--   main product     ============================================================= -->
+        <main class="" style="margin-top:">
+            <section class="container shadow-3 bg-white pb-3 border-full-1px border-right-0 border-left-0 border-me-4">
+
+                <!--           image-->
+                <div class="row">
+                    <div class="col-12 p-0 pb-3">
+                        <a class="" href="">
+                            <img src="img/product/tas/leegoal-womens-nylon-tote-bag-shoulder-handbag-with-zipper-for-shopping-khaki-0489-1150198-597d0ab2c2a43d46cf0da62f61614f27-webp-zoom_850x850.jpg" class="img-fluid" alt="main_image">
+                        </a>
+                    </div>
+                    <div class="col-12 p-0">
+                        <div class="row no-gutters gutters-small">
+                            <div class="col-3 align-self-center gutters-small-item border-full-1px border-me-4 bg-me-">
+                                <a class="" href="">
+                                    <img src="img/product/tas/leegoal-womens-nylon-tote-bag-shoulder-handbag-with-zipper-for-shopping-khaki-0489-1150198-597d0ab2c2a43d46cf0da62f61614f27-webp-zoom_850x850.jpg" class="img-fluid" alt="side-image">
+                                </a>
+                            </div>
+                            <div class="col-3 align-self-center gutters-small-item border-full-1px border-me-4 bg-me-">
+                                <a class="" href="">
+                                    <img src="img/product/tas/leegoal-womens-nylon-tote-bag-shoulder-handbag-with-zipper-for-shopping-khaki-0489-1150198-2a9fa054fef2c7fbf65c64898ba26278-webp-zoom_850x850.jpg" class="img-fluid" alt="side-image">
+                                </a>
+                            </div>
+                            <div class="col-3 align-self-center gutters-small-item border-full-1px border-me-4 bg-me-">
+                                <a class="" href="">
+                                    <img src="img/product/tas/leegoal-womens-nylon-tote-bag-shoulder-handbag-with-zipper-for-shopping-khaki-0489-1150198-d944b2e139c4fa6831579db5e693a668-webp-zoom_850x850.jpg" class="img-fluid" alt="side-image">
+                                </a>
+                            </div>
+                            <div class="col-3 gutters-small-item border-full-1px border-me-4 bg-me-">
+                                <a class="d-flex justify-content-center align-self-center border-circle" href="">
+                                    <svg class="rotate-45 w-50 h-50" fill="#475aa8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--       info     -->
+            <section class="shadow-3 bg-white py-110 pb-0 my-180 border-full-1px border-right-0 border-left-0 border-me-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 py-1">
+                            <h5 class="text-costum-5" style="">Leegoal Womens Nylon Tote Bag</h5>
+                        </div>
+                        <!--
+                    <div class="col-12">
+                        
+                        <nav class="size-080 opa-d-">
+                        <a class="breadcrumb-item text-breadcrumb1" href="" >Fashion</a>  
+                        <a class="breadcrumb-item text-breadcrumb1" href="" >Fashion Wanita</a> 
+                        <a class="breadcrumb-item text-breadcrumb1" href="" >Tas</a>
+                        </nav>
+
+                        
+                   <a class="badge bg-warning2 px-090 py-055 text-1 mr-1" href="">Fashion</a>
+                   <a class="badge bg-warning2 px-090 py-055 text-1 mr-1" href="">Woman</a>
+                   <a class="badge bg-warning2 px-090 py-055 text-1 mr-1" href="">Bag</a>
+                   <a class="badge bg-warning2 px-090 py-055 text-1 mr-1" href="">Texture</a>
+
+                    </div>
+-->
+                        <div class="col-12 pt-3 ">
+                            <div class="py-1 w-50">
+                                <h5 class="font-weight-bold size-0100 text-costum-4">Rp 94.000 <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">Rp 413.000</s></span></h5>
+                            </div>
+                            <div class="w-50">
+                                <div class="badge px-2 py-2 size-070 bg-danger2 borde
+                                                            r-0 d-block float-right text-2" style="height:26px;">78% OFF</div>
+                            </div>
+                        </div>
+                        <div class="col-12 py-2">
+                            <!--        star                        -->
+                            <div class="my-rating" data-rating="4.5"></div>
+
+
+
+                        </div>
+                        <div class="col-12 justify-content-end py-2">
+
+                            <!--heart-->
+                            <div class="d-flex align-content-center mr-2">
+                                <svg class="heart-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 30 30" xml:space="preserve">
+<path d="M16.866,18.095c-2.44,2.439-6.397,2.441-8.839,0l-5.303-5.303c-2.441-2.439-2.44-6.399,0-8.838l0,0
+	c2.438-2.44,6.398-2.441,8.84,0l5.302,5.302C19.307,11.698,19.307,15.655,16.866,18.095L16.866,18.095z"/>
+<path d="M22.168,3.954c2.442,2.44,2.442,6.398,0.001,8.838l-5.303,5.303c-2.44,2.439-6.398,2.44-8.839,0l0,0
+	c-2.44-2.44-2.439-6.398,0-8.839l5.303-5.302C15.771,1.513,19.729,1.512,22.168,3.954L22.168,3.954z"/>
+<polygon points="12.449,4.942 21.235,13.727 12.449,22.513 3.658,13.727 "/>
+</svg>
+                                <small class="px-055 size-075 font-weight-bold text-10" style="">8</small>
+                            </div>
+
+                            <!--                          view-->
+                            <div class="d-flex align-content-center mr-2">
+                                <svg class="view-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15s18.54-6.22 22-15C42.54 15.22 34.01 9 24 9zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z"/></svg>
+                                <small class="px-055 size-075 font-weight-bold text-10" style="">12</small>
+                            </div>
+
+                            <!--                            review-->
+                            <div class="d-flex align-content-center">
+                                <svg class="review-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 14v-2.47l6.88-6.88c.2-.2.51-.2.71 0l1.77 1.77c.2.2.2.51 0 .71L8.47 14H6zm12 0h-7.5l2-2H18v2z"/></svg>
+                                <small class="px-055 size-075 font-weight-bold text-10" style="">1</small>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--                share-->
+                <div class="border-full-1px border-me-4 border-bottom-0 border-right-0 border-left-0 mt-3" style="padding-top: 10px">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2">
+                                <h5 class="size-090 py-2 text-10" style="">Share</h5>
+                            </div>
+                            <div class="col-10 justify-content-end">
+                                <div class="">
+                                    <a class="" href=""><img src="img/sosmed/facebook.svg" alt="FB" width="24px" class="" style="margin:0 2px;"></a>
+                                    <a class="" href=""><img src="img/sosmed/google-plus.svg" alt="G+" width="24px" class="" style="margin:0 2px;"></a>
+                                    <a class="" href=""><img src="img/sosmed/instagram.svg" alt="IG" width="24px" class="" style="margin:0 2px;"></a>
+                                    <a class="" href=""><img src="img/sosmed/pinterest.svg" alt="Pr" width="24px" class="" style="margin:0 2px;"></a>
+                                    <a class="" href=""><img src="img/sosmed/twitter.svg" alt="Tw" width="24px" class="" style="margin:0 2px;"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!--                Description dkk-->
+            <section class="shadow-3 bg-white my-180 border-full-1px border-right-0 border-left-0 border-me-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 p-0 border-full-1px border-top-0 border-right-0 border-left-0 border-me-4">
+                            <ul class="nav nav-pills w-100 size-090" id="myTab" role="tablist">
+                                <li class="nav-item w-33 text-center">
+                                    <a class="nav-link active  py-070" data-toggle="tab" href="#description" role="tab" aria-controls="description">Description</a>
+                                </li>
+                                <li class="nav-item w-33 text-center">
+                                    <a class="nav-link py-070" data-toggle="tab" href="#detail" role="tab" aria-controls="detail">Detail</a>
+                                </li>
+                                <li class="nav-item w-33 text-center">
+                                    <a class="nav-link py-070" data-toggle="tab" href="#review" role="tab" aria-controls="review">Review</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col-12 py-110">
+                            <div class="tab-content size-085 text-9">
+                                <div class="tab-pane  active" id="description" role="tabpanel">
+                                    <p>
+                                        This bag is made with high quality nylon materials, durable and elegant. It has a small coin wallet, portable and convenient for putting some change. Multifunction bag with enough area, best for school, shopping, or work.
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="detail" role="tabpanel">
+                                    <div>
+                                        <h5 class="text-breadcrumb1 size-095 my-2 mb-1 mt-3">Material</h5>
+                                        nylon
+                                    </div>
+                                    <div>
+                                        <h5 class="text-breadcrumb1 size-095 my-2 mb-1 mt-3">Size</h5>
+
+                                        Width: 43cm/16.93in<br> Height: 26cm/10.24in<br> Thickness: 10cm/3.94in 
+                                    </div> 
+                                    <div>
+                                        <h5 class="text-breadcrumb1 size-095 my-2 mb-1 mt-3">Other</h5>
+                                        With mini coin wallet, portable and convenient Multifunctions tote bag, best for school, shopping, or working Big shoulder bag with enough area, you needn't to worry about the space at all.
+                                    </div> 
+
+                                </div>
+                                <div class="tab-pane fade " id="review" role="tabpanel">
+                                    <div class="media">
+                                        <div class="mr-3 d-flex border-full-1px border-me-4 rounded-circle" style="width:70px;height:70px;">
+                                            <img class="img-fluid rounded-circle" src="img/avatar/man.png" alt="user_name">
+                                        </div>
+                                        <div class="media-body">
+                                            <h5 class="mt-0 size-120 font-weight-bold text-9  mb-0">User Name</h5>
+                                            <div class="d-inline-block">
+                                                <span class="text-10 size-085 mr-2">
+                                            <svg class="calendar-icon-user" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/>
+
+</svg>
+                                            27 December 2017</span>
+                                            </div>
+                                            <div class="d-inline-block">
+
+                                                <span class="text-10 size-085">
+                                            <svg class="clock-icon-user" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37V8zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/>
+</svg>
+                                                12:41</span></div>
+
+                                            <p class="text-11 size-0100 my-090">If you comment on something, you give your opinion about it or you give an explanation.
+                                            </p>
+
+                                            <div class="">
+                                                <a class="badge bg-me-5 py-070 px-0100 size-090 font-weight-normal" href="#">Reply</a>
+                                                <a class="badge bg-me-5 py-070 px-0100 size-090 font-weight-normal" href="#">Like (0)</a>
+                                            </div>
+
+
+                                            <!--                                                nest media -->
+
+                                            <div class="media mt-4">
+                                                <div class="mr-3 d-flex border-full-1px border-me-4 rounded-circle" style="width:70px;height:70px;">
+                                                    <img class="img-fluid rounded-circle" src="img/avatar/girl-2.png" alt="user_name">
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="mt-0 size-120 font-weight-bold text-9  mb-0">User Name</h5>
+                                                    <div class="d-inline-block">
+                                                        <span class="text-10 size-085 mr-2">
+                                            <svg class="calendar-icon-user" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/>
+
+</svg>
+                                            27 December 2017</span>
+                                                    </div>
+                                                    <div class="d-inline-block">
+
+                                                        <span class="text-10 size-085">
+                                            <svg class="clock-icon-user" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37V8zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/>
+</svg>
+                                                12:41</span></div>
+                                                    <p class="text-11 size-0100 my-090">Media in a media object can be aligned with flexbox utilities to the top (default), middle, or end of your .media-body content.
+                                                    </p>
+
+                                                    <div class="">
+                                                        <a class="badge bg-me-5 py-070 px-0100 size-090 font-weight-normal" href="#">Reply</a>
+                                                        <a class="badge bg-me-5 py-070 px-0100 size-090 font-weight-normal" href="#">Like (0)</a>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--            btn-->
+            <section class="my-180">
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn bg-danger2 text-2 btn-block btn-lg mx-2 size-0100">Buy</button>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--            related product-->
+            <section class="container">
+                <div class="row no-gutters gutter-20 mb-20px">
+                    <div class="col-6">
+                        <div class="card rounded-0">
+                            <img class="img-fluid" src="img/product/tas/2.png" alt="related product">
+                            <div class="card-block p-2">
+                                <div class="judul">
+                                    <h5 class="size-095 m-0 mb-2 ">Brown bear sweater</h5>
+                                </div>
+                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 120.000
+                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10"></s></span>
+                                </h5>
+                                <div class="product-rating" data-rating="4.5"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 ">
+                        <div class="card rounded-0">
+                            <img class="img-fluid" src="img/product/tas/5.jpg" alt="related product">
+                            <div class="card-block p-2">
+                                <div class="judul">
+                                    <h5 class="size-095 m-0 mb-2 ">Jumper suit baby full set. Black white color</h5>
+                                </div>
+                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 169.000
+                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">Rp 219.000</s></span></h5>
+                                <div class="product-rating" data-rating="3.5"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card rounded-0">
+                            <img class="img-fluid" src="img/product/tas/3.jpg" alt="related product">
+                            <div class="card-block p-2">
+                                <div class="judul">
+                                    <h5 class="size-095 m-0 mb-2 ">Flat skirt all color</h5>
+                                </div>
+                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 69.900
+                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">Rp 140.000</s></span></h5>
+                                <div class="product-rating" data-rating="5"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 ">
+                        <div class="card rounded-0">
+                            <img class="img-fluid" src="img/product/tas/4.jpg" alt="related product">
+                            <div class="card-block p-2">
+                                <div class="judul">
+                                    <h5 class="size-095 m-0 mb-2 ">Yellow cloth with love mom text for your childern to you</h5>
+                                </div>
+                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 78.000
+                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10"></s></span></h5>
+                                <div class="product-rating" data-rating="5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <!--        footer ========================================================================-->
+        <footer class="bg-me-6 shadow-4">
+            <div class="container">
+                <div class="row">
+                    <!--               suvscribe + list-->
+                    <div class="col-12 py-2 border-full-2px border-left-0 border-right-0 border-top-0 border-me-7 my-2">
+                        <!--                   email subscribe-->
+                        <form method="post" class="input-group subscribe w-100" action="">
+                            <input type="email" placeholder="Keep update with our offer" class="form-control border-full-1px border-me-5 bg-me-7">
+                            <span class="input-group-btn">
+                                <button class="btn bg-me-5 font-weight-bold text-white border-0" type="button">Subscribe</button>
+                            </span>
+                        </form>
+
+                    </div>
+                    <!--                    list -->
+                    <div class="col-12 d-block p-0">
+                        <ul class="list-unstyled p-0 m-0" style="font-weight:500">
+                            <li class="bg-me-9 px-1 border-full-1px border-left-0 border-right-0 border-top-0 border-me-7">
+                                <a class="text-11 d-block container nav-link" href="#" style="font-weight:500">About
+                                   <span class="float-right size-130" style="margin-top: -5px;"> &rsaquo;</span>
+                              </a>
+                            </li>
+                            <li class="bg-me-9 px-1 border-full-1px border-left-0 border-right-0 border-top-0 border-me-7">
+                                <a class="text-11 d-block container nav-link" href="#">Help
+                                   <span class="float-right size-130" style="margin-top: -5px;"> &rsaquo;</span>
+                              </a>
+                            </li>
+                            <li class="bg-me-9 px-1 border-full-1px border-left-0 border-right-0 border-top-0 border-me-7">
+                                <a class="text-11 d-block container nav-link" href="#">Privacy Policy
+                                   <span class="float-right size-130" style="margin-top: -5px;"> &rsaquo;</span>
+                              </a>
+                            </li>
+                            <li class="bg-me-9 px-1 border-full-1px border-left-0 border-right-0 border-top-0 border-me-7">
+                                <a class="text-11 d-block container nav-link" href="#">Terms of Use
+                                   <span class="float-right size-130" style="margin-top: -5px;"> &rsaquo;</span>
+                              </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!--                copyright-->
+                <div class="row text-8 size-080 py-4">
+                    <div class="col-12 justify-content-center mb-1">
+                        <ul class="nav">
+                            <li class="mx-1"><a href="#" class="text-1">Mobile</a></li>
+                            <li class="mx-1">|</li>
+                            <li class="mx-1"> <a href="#" class="text-7">Desktop</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 text-center justify-content-center">
+                        &copy; 2017 - PT AYO TECHNO IDEA
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.star-rating-svg.min.js"></script>
+    <script>
+        $('#menu-btn').click(function() {
+            $('#side-menu').toggleClass('d-none');
+            $('#search-form').addClass('d-none');
+        });
+        $('#search-btn').click(function() {
+            $('#search-form').toggleClass('d-none');
+        });
+        $('#close-side-menu').click(function() {
+            $('#side-menu').toggleClass('d-none');
+        });
+
+        $('#myTab a').click(function(e) {
+            e.preventDefault()
+            $(this).tab('show')
+        });
+
+        $(".my-rating").starRating({
+            starSize: 20,
+            initialRating: 4.5,
+            readOnly: true,
+            disableAfterRate: false,
+            activeColor: 'orange',
+            useGradient: false,
+            callback: function(currentRating, $el) {
+                // make a server call here
+            }
+        });
+
+        $(".product-rating").starRating({
+            starSize: 15,
+            readOnly: true,
+            disableAfterRate: false,
+            activeColor: 'orange',
+            useGradient: false,
+            callback: function(currentRating, $el) {
+                // make a server call here
+            }
+        });
+
+    </script>
+</body>
+
+</html>
