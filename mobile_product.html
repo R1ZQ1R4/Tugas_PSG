@@ -41,8 +41,8 @@
         }
         
         .card .card-block .judul {
-            margin-bottom: 6px;
-            max-height: 35px;
+            margin-bottom: 0.5em;
+            max-height: 2em;
             text-overflow: ellipsis;
             overflow: hidden;
             /*            overflow:auto;*/
@@ -638,7 +638,8 @@
         $('#search-btn').click(function() {
             $('#search-form').toggleClass('d-none');
         });
-        $('#close-side-menu').click(function() {
+        $('#close-side-menu').click(function(e) {
+            e.preventDefault;
             $('#side-menu').toggleClass('d-none');
         });
 
