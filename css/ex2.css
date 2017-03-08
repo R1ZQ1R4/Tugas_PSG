@@ -1,6 +1,14 @@
 body {
     background-color: #fafafa;
 }
+
+.clicking, .clicking:focus, .clicking:hover, .clicking:active{
+    text-decoration: none;
+}
+.clicking:focus, .clicking:hover, .clicking:active{
+    box-shadow: 0 2px 8px #9E9E9E;
+}
+
 .page-item.active .page-link{
     background-color: #EC2534 !important;
     border-color: #EC2534 !important;
