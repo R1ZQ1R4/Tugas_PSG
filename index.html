@@ -7,16 +7,26 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Daftar Isi</title>
 <style>
+    ul li {
+        padding: 20px 0;
+    }
     .open_file::before{
         content: "Open : ";
     }
     .open_file{
-        color: blueviolet;
-        font-size: 1.5em;
+        color: limegreen;
+        font-size: 1.2em;
+        transition: font-size 300ms;
+        -webkit-transition: font-size 300ms;
+        -ms-transition: font-size 300ms;
+        -o-transition: font-size 300ms;
+        -moz-transition: font-size 300ms;
+        
     }
     
-    .open_file:hover{
-        color: mediumvioletred;
+    .open_file:hover, .open_file:focus, .open_file:active{
+        font-size: 1.4em;
+        color: blueviolet;
     }
     </style>
 </head>
@@ -25,11 +35,11 @@
   <div class="container">
   <div class="row">
       <div class="col-12">
-          <h1>Daftar Isi</h1>
+          <h1 class="text-center">Daftar Isi</h1>
       </div>
   </div>
   <div class="col-12">
-  <ul class="list-unstyled">
+  <ul class="list-unstyled text-center">
   <li class="">
    <a class="open_file" href="homepage_desktop1.html">homepage_desktop1</a>
    </li>
