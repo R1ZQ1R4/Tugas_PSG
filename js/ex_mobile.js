@@ -49,40 +49,6 @@ $(document).ready(function () {
         $(this).accordion(275);
     });
 
-
-    $('#burger-menu').click(function () {
-        $('#geser').toggleClass('hide-menu-right-50');
-        $('.dim-background, #menu-side-right').toggleClass("d-none ");
-        $('.dim-background').animateCss('fadeIn');
-
-        $('#menu-side-right').animateCss('slideInRight');
-
-        //        $('#menu-side-right').toggleClass('hide-menu-right-100 d-none');
-    });
-
-    $('#close-menu').click(function () {
-        $('#geser').toggleClass('hide-menu-right-50');
-        //        $('.dim-background').toggleClass("d-none ");
-        $('.dim-background').closeanimateCss('fadeOut');
-        $('#menu-side-right').closeanimateCss('slideOutRight');
-
-//        $('#menu-side-right').toggleClass('hide-menu-right-100', function () {
-//            $(this).toggleClass("d-none ");
-//        });
-    });
-
-
-    $('#search').click(function () {
-        $(this).toggleClass('zoomOut');
-        $('.dim-background, #search-form').toggleClass("d-none ").animateCss('slideInDown');
-    });
-
-    $('#close-search').click(function () {
-        $('#search').toggleClass('zoomOut');
-        $('.dim-background, #search-form').closeanimateCss('slideOutUp');
-    });
-
-
     $('#show-catalog').click(function () {
         $('#hide-catalog, #show-catalog, #catalog').toggleClass('d-none ');
         $('#catalog').animateCss('slideInUp');

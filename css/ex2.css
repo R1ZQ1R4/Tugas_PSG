@@ -1,23 +1,85 @@
 body {
     background-color: #fafafa;
 }
-.bounceInUp, .bounceInRight, .bounceInDown, .bounceInLeft, .bounceOutUp, .bounceOutRight, .bounceOutDown, .bounceOutLeft, .slideInLeft, .slideInRight, .slideOutLeft, .slideOutRight, .slideInDown, .slideInUp, .slideOutDown, .slideOutUp{
-    -webkit-animation-duration: 255ms;
-       -moz-animation-duration: 255ms;
-         -o-animation-duration: 255ms;
-            animation-duration: 255ms;
-}
-.fadeIn, .fadeOut{
-    -webkit-animation-duration:255ms;
-       -moz-animation-duration:255ms;
-         -o-animation-duration:255ms;
-            animation-duration:255ms;
+
+ .card .card-block {
+            height: 6em;
+            /*            overflow:auto;*/
+        }
+        
+        .card .card-block .judul {
+            margin-bottom: 0.4em;
+            max-height: 2.1em;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            /*            overflow:auto;*/
+        }
+
+.gutters-small {
+    margin: 0px -5px !important;
 }
 
-.over-hide{
+.gutters-small-item {
+    padding: 0px 5px !important;
+}
+
+.gutters-small-item2 {
+    padding: 0px 5px !important;
+    margin-bottom: 10px;
+}
+
+.icon {
+    margin-top: -8px;
+    vertical-align: middle;
+}
+
+.icon.home,
+.icon.categories,
+.icon.profil,
+.icon.setting,
+.icon.logOut {
+    width: 24px;
+    height: 24px;
+    fill: #777777;
+    margin-right: 5px;
+    stroke: #777777;
+}
+
+.bounceInUp,
+.bounceInRight,
+.bounceInDown,
+.bounceInLeft,
+.bounceOutUp,
+.bounceOutRight,
+.bounceOutDown,
+.bounceOutLeft,
+.slideInLeft,
+.slideInRight,
+.slideOutLeft,
+.slideOutRight,
+.slideInDown,
+.slideInUp,
+.slideOutDown,
+.slideOutUp {
+    -webkit-animation-duration: 255ms;
+    -moz-animation-duration: 255ms;
+    -o-animation-duration: 255ms;
+    animation-duration: 255ms;
+}
+
+.fadeIn,
+.fadeOut {
+    -webkit-animation-duration: 255ms;
+    -moz-animation-duration: 255ms;
+    -o-animation-duration: 255ms;
+    animation-duration: 255ms;
+}
+
+.over-hide {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
 #search-mobile {
     margin-top: 1em;
     margin-bottom: 5em;
@@ -39,7 +101,7 @@ body {
 */
     cursor: pointer;
     border-color: #C62828;
-    background-color:  #D32F2F;
+    background-color: #D32F2F;
     opacity: 0.4;
     margin: 2px;
     ;
@@ -54,18 +116,18 @@ body {
 
 .hide-menu-0 {
     -moz-transition-duration: 155ms;
-      -o-transition-duration: 155ms;
-         transition-duration: 155ms;
+    -o-transition-duration: 155ms;
+    transition-duration: 155ms;
     -webkit-transition-duration: 155ms;
     -moz-transform: translateX(0);
-         transform: translateX(0);
+    transform: translateX(0);
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
     -webkit-transition-timing-function: ease-in-out;
-       -moz-transition-timing-function: ease-in-out;
-         -o-transition-timing-function: ease-in-out;
-            transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
 }
 
 .dim-background {
@@ -74,7 +136,6 @@ body {
     height: 100%;
     z-index: 9999;
 }
-
 
 .fixed {
     position: fixed;
@@ -116,7 +177,7 @@ body {
 
 .swiper-pagination-bullet-active {
     color: #fff;
-    background: #009688 !important; 
+    background: #009688 !important;
 }
 
 .hover-item-invisible {
@@ -130,7 +191,6 @@ body {
 .card:hover .hover-item-invisible {
     opacity: 1;
 }
-
 
 .h-30 {
     height: 30%;
@@ -148,7 +208,6 @@ button {
     position: absolute;
 }
 
-
 .caption-r,
 .caption-l {
     color: white;
@@ -164,7 +223,6 @@ button {
     left: 0;
 }
 
-
 .search-group {
     width: 100%;
     margin: 1em 0;
@@ -176,8 +234,8 @@ button {
     padding: 5px 15px;
     border: none;
     -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .btn-more {
