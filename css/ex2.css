@@ -9,7 +9,7 @@ body {
         
         .card .card-block .judul {
             margin-bottom: 0.4em;
-            max-height: 2.1em;
+            max-height: 2.06em;
             text-overflow: ellipsis;
             overflow: hidden;
             /*            overflow:auto;*/
