@@ -48,6 +48,22 @@
             margin-bottom: 20px;
         }
         
+        .gutter-1em.row {
+            margin-right: -0.5em;
+            margin-left: -0.5em;
+        }
+        
+        .gutter-1em>[class^="col-"],
+        .gutter-1em>[class^=" col-"] {
+            padding-right: 0.5em;
+            padding-left: 0.5em;
+        }
+        
+        .mb-1em>[class^="col-"],
+        .mb-1em>[class^=" col-"] {
+            margin-bottom: 1em;
+        }
+        
         .mr-list-20px>[class^="nav-item"],
         .mr-list-20px>[class^="nav-item "] {
             margin-right: 20px !important;
@@ -233,7 +249,7 @@
         </div>
 
         <!--        header-->
-        <header class="swiper-container mb-5">
+        <header class="swiper-container my-180 mt-0 shadow-3 bg-white">
             <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
@@ -259,134 +275,154 @@
         </header>
 
         <!--main content-->
-        <main class="mb-4">
+        <main class="">
             <!--           Category -->
-            <section class="mb-4" style="overflow:hidden">
+            <section class="my-180 container" style="overflow:hidden">
                 <h5 class="text-center mb-3 text-uppercase">CATEGORY</h5>
-                <div class="row no-gutters gutter-20 mb-20px">
+                <div class="row no-gutters gutter-1em mb-1em">
 
                     <div class="col-6  ">
-                        <div class="card w-100">
-                            <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
-                            <div class="p-2">
-                                <p class="card-text text-center">Cloth</p>
+                        <div class="card w-100 rounded-0">
+                           <div class="bg-me-5">
+                                <h5 class="size-0100 my-075 text-center text-white">T-Shirt</h5>
                             </div>
+                           <img class="w-75 m-auto px-1 py-110" src="img/icon/category/shirt.svg" alt="category1">
+                              
+                        </div>
+                    </div>
+
+                    <div class="col-6  ">
+                        <div class="card w-100 rounded-0">
+                           <div class="bg-me-5">
+                                <h5 class="size-0100 my-075 text-center text-white">Underwear</h5>
+                            </div>
+                           <img class="w-75 m-auto px-1 py-110" src="img/icon/category/underwear-1.svg" alt="category1">
                         </div>
                     </div>
 
                     <div class="col-6 ">
-                        <div class="card w-100">
-                            <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
-                            <div class="p-2">
-                                <p class="card-text text-center">Underwear</p>
+                        <div class="card w-100 rounded-0">
+                            <div class="bg-me-5">
+                                <h5 class="size-0100 my-075 text-center text-white">Pants</h5>
                             </div>
+                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/pants.svg" alt="category1">
+                            
                         </div>
                     </div>
 
                     <div class="col-6 ">
-                        <div class="card w-100">
-                            <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
-                            <div class="p-2">
-                                <p class="card-text text-center">Pants</p>
+                        <div class="card w-100 rounded-0">
+                            <div class="bg-me-5">
+                                <h5 class="size-0100 my-075 text-center text-white">Jeans</h5>
                             </div>
+                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/jeans.svg" alt="category1">
+                            
                         </div>
                     </div>
 
                     <div class="col-6 ">
-                        <div class="card w-100">
-                            <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
-                            <div class="p-2">
-                                <p class="card-text text-center">Jeans</p>
+                        <div class="card w-100 rounded-0">
+                            <div class="bg-me-5">
+                                <h5 class="size-0100 my-075 text-center text-white">Skirt</h5>
                             </div>
+                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/skirt.svg" alt="category1">
+                            
                         </div>
                     </div>
 
                     <div class="col-6 ">
-                        <div class="card w-100">
-                            <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
-                            <div class="p-2">
-                                <p class="card-text text-center">Sweater</p>
+                        <div class="card w-100 rounded-0">
+                            <div class="bg-me-5">
+                                <h5 class="size-0100 my-075 text-center text-white">Jacket</h5>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-6 ">
-                        <div class="card w-100">
-                            <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
-                            <div class="p-2">
-                                <p class="card-text text-center">Jacket</p>
-                            </div>
+                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/jacket.svg" alt="category1">
+                            
                         </div>
                     </div>
 
                 </div>
 
-                <div class="d-none row no-gutters gutter-20 mb-20px animated" id="catalog">
-                    <div class="col-6 ">
-                        <div class="card w-100">
-                            <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
-                            <div class="p-2">
-                                <p class="card-text text-center">Jacket</p>
+                <div class="d-none row no-gutters gutter-1em mb-1em animated" id="catalog">
+                    
+                     <div class="col-6 ">
+                        <div class="card w-100 rounded-0">
+                            <div class="bg-me-5">
+                                <h5 class="size-0100 my-075 text-center text-white">Backpack</h5>
                             </div>
+                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/backpack.svg" alt="category1">
+                            
                         </div>
                     </div>
-                    <div class="col-6 ">
-                        <div class="card w-100">
-                            <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
-                            <div class="p-2">
-                                <p class="card-text text-center">Jacket</p>
+                    
+                     <div class="col-6 ">
+                        <div class="card w-100 rounded-0">
+                            <div class="bg-me-5">
+                                <h5 class="size-0100 my-075 text-center text-white">Gloves</h5>
                             </div>
+                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/gloves.svg" alt="category1">
+                            
                         </div>
                     </div>
-                    <div class="col-6 ">
-                        <div class="card w-100">
-                            <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
-                            <div class="p-2">
-                                <p class="card-text text-center">Jacket</p>
+                    
+                     <div class="col-6 ">
+                        <div class="card w-100 rounded-0">
+                            <div class="bg-me-5">
+                                <h5 class="size-0100 my-075 text-center text-white">Shoe</h5>
                             </div>
+                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/shoe.svg" alt="category1">
+                            
                         </div>
                     </div>
-                    <div class="col-6 ">
-                        <div class="card w-100">
-                            <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
-                            <div class="p-2">
-                                <p class="card-text text-center">Jacket</p>
+                    
+                     <div class="col-6 ">
+                        <div class="card w-100 rounded-0">
+                            <div class="bg-me-5">
+                                <h5 class="size-0100 my-075 text-center text-white">Coat</h5>
                             </div>
+                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/coat.svg" alt="category1">
+                            
                         </div>
                     </div>
-                    <div class="col-6 ">
-                        <div class="card w-100">
-                            <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
-                            <div class="p-2">
-                                <p class="card-text text-center">Jacket</p>
+                    
+                     <div class="col-6 ">
+                        <div class="card w-100 rounded-0">
+                            <div class="bg-me-5">
+                                <h5 class="size-0100 my-075 text-center text-white">Belt</h5>
                             </div>
+                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/belt.svg" alt="category1">
+                            
                         </div>
                     </div>
-                    <div class="col-6 ">
-                        <div class="card w-100">
-                            <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
-                            <div class="p-2">
-                                <p class="card-text text-center">Jacket</p>
+                    
+                     <div class="col-6 ">
+                        <div class="card w-100 rounded-0">
+                            <div class="bg-me-5">
+                                <h5 class="size-0100 my-075 text-center text-white">Umberella</h5>
                             </div>
+                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/umbrella.svg" alt="category1">
+                            
                         </div>
                     </div>
-                    <div class="col-6 ">
-                        <div class="card w-100">
-                            <img class="img-fluid" src="https://dummyimage.com/300x300/5dcde3/000000.jpg&text=category" alt="category1">
-                            <div class="p-2">
-                                <p class="card-text text-center">Jacket</p>
+                    
+                     <div class="col-6 ">
+                        <div class="card w-100 rounded-0">
+                            <div class="bg-me-5">
+                                <h5 class="size-0100 my-075 text-center text-white">Socks</h5>
                             </div>
+                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/socks.svg" alt="category1">
+                            
                         </div>
                     </div>
-
+                    
+      
 
                 </div>
 
                 <div class="w-100 text-center">
-                    <button id="show-catalog" class="btn bg-none btn-me-1 badge-pill px-4">
+                    <button id="show-catalog" class="btn bg-danger2 text-2 btn-lg mx-2 size-0100">
                                 More
                             </button>
-                    <button id="hide-catalog" class="btn bg-none btn-me-1 px-4 badge-pill d-none">
+                    <button id="hide-catalog" class="btn bg-danger2 text-2 btn-lg mx-2 size-0100 d-none">
                                 Hide
                             </button>
                 </div>
@@ -394,15 +430,15 @@
             </section>
 
             <!--           promo-->
-            <section class="mb-5">
+            <section class="my-180 shadow-3">
                 <img class="img-fluid" src="img/banner/BEE-1734-Fashion%20Sale%20Banners_01_Preview3.jpg" alt="promo" />
             </section>
 
             <!--          recomended-->
-            <section class="mb-4">
+            <section class="my-180 container">
 
 
-                <div class="row no-gutters mb-4 justify-content-center">
+                <div class="row no-gutters justify-content-center ">
                     <h5 class="text-uppercase">New Sale</h5>
                     <div class="col-12">
                         <div class="swiper-container-recommended">
@@ -543,12 +579,25 @@
 
                     </div>
 
-                    <a class="font-weight-normal size-0905 py-2 text-5 px-3 ml-auto mt-2 btn bg-me-2" href=""><span class="">See more &raquo;</span></a>
 
                 </div>
-
-                <!--               2 -->
-                <div class="row no-gutters justify-content-center mb-4">
+                <ul class="pagination pagination-sm justify-content-end">
+                    <li class="page-item  active">
+                        <a class="page-link" href="#">1 </a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">More</a>
+                    </li>
+                </ul>
+            </section>
+            <!--               2 -->
+            <section class="my-180 container">
+                <div class="row no-gutters justify-content-center">
                     <h5 class="text-uppercase">Most View</h5>
                     <div class="col-12">
                         <div class="swiper-container-recommended">
@@ -618,11 +667,26 @@
                         </div>
 
                     </div>
-                    <a class="font-weight-normal size-0905 py-2 text-5 px-3 ml-auto mt-2 btn bg-me-2" href=""><span class="">See more &raquo;</span></a>
+                    
                 </div>
-
-                <!--                   By rating -->
-                <div class="row no-gutters justify-content-center mb-4">
+                
+                <ul class="pagination pagination-sm justify-content-end">
+                    <li class="page-item  active">
+                        <a class="page-link" href="#">1 </a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">More</a>
+                    </li>
+                </ul>
+            </section>
+            <!--                   By rating -->
+            <section class="my-180 container">
+                <div class="row no-gutters justify-content-center">
                     <h5 class="text-uppercase">By Rating</h5>
                     <div class="col-12">
                         <div class="swiper-container-recommended">
@@ -674,22 +738,6 @@
 
                                 <div class="swiper-slide">
                                     <div class="card rounded-0">
-                                       <img class="img-fluid" src="img/product/700/.jpg" alt="related product">
-                                           <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">Product here
-
-                                                </h5>
-                                            </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 00.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">000.000</s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="card rounded-0">
                                         <img class="img-fluid" src="img/product/700/12.jpg" alt="related product">
                                         <div class="card-block p-2">
                                             <div class="judul">
@@ -725,14 +773,27 @@
                         </div>
 
                     </div>
-                    <a class="font-weight-normal size-0905 py-2 text-5 px-3 ml-auto mt-2 btn bg-me-2" href=""><span class="">See more &raquo;</span></a>
+                    
                 </div>
-
-
-
+                <ul class="pagination pagination-sm justify-content-end">
+                    <li class="page-item  active">
+                        <a class="page-link" href="#">1 </a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">More</a>
+                    </li>
+                </ul>
             </section>
+
+
+
             <!--     banner  -->
-            <section class="mb-4">
+            <section class="my-180 shadow-3">
                 <img class="img-fluid" src="img/banner/SAVE-THE-DATE_Web-banner-size-for-web.jpg" alt="banner">
             </section>
         </main>
@@ -841,11 +902,10 @@
 
         var swiper2 = new Swiper('.swiper-container-recommended', {
             slidesPerView: 2,
-            spaceBetween: 20,
-            autoplayDisableOnInteraction: false,
+            spaceBetween: 16,
             keyboardControl: true,
             loop: true,
-            autoplay: 3000
+            autoplay: 5000
         });
 
     </script>

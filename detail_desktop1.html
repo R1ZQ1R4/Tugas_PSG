@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <title>Tugas 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ex.css">
+    <link rel="stylesheet" href="css/media_ex.css">
+
+    <style SASS>
+        .row>div[class*='col-'] {
+            display: flex;
+            flex: 1 0 auto;
+        }
+        
+        .review>div[class*='col-'] {
+            display: block;
+        }
+        
+        .gutters-small {
+            margin: 0px -5px !important;
+        }
+        
+        .gutters-small-item {
+            padding: 0px 5px !important;
+        }
+        
+        .gutter-20.row {
+            margin-right: -10px;
+            margin-left: -10px;
+        }
+        
+        .gutter-20>[class^="col-"],
+        .gutter-20>[class^=" col-"] {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        
+        .mb-20px>[class^="col-"],
+        .mb-20px>[class^=" col-"] {
+            margin-bottom: 20px;
+        }
+        
+        .mr-list-20px>[class^="nav-item"],
+        .mr-list-20px>[class^="nav-item "] {
+            margin-right: 20px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!--   Navbar =================================================-->
+    <nav class="navbar navbar-inverse bg-inverse sticky-top">
+        <div class="container p-0 relative">
+            <div class="row navbar navbar-toggleable-sm">
+                <div class="col-md-2 col-12">
+                    <a class="navbar-brand" href="#">Tokoku</a>
+                    <div class="absolute" style=" right:0px;">
+                        <button class="navbar-toggler mx-3" style="height:40px" type="button" id="search-click">
+                            <img class="" href="# " src="img/search-icon.png ">
+                        </button>
+                        <button class="navbar-toggler" style="height:40px" type="button" id="burger">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="nava">
+                    <div class="col-12">
+                        <ul class="mr-list-20px navbar-nav my-2 my-md-0 float-md-right">
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" role="button" id="mega-menu-btn">Categories</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="# ">Account</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="# ">Cart
+                            <span class="badge badge-danger badge-pill mx-1" style="min-width:30px;">
+                                0
+                            
+                            </span>
+                            </a>
+                            </li>
+                            <li class="hidden-sm-down ml-4">
+                                <button class="btn" id="search-click-list" style="background:none;">
+                                    <img class="" href="" src="img/search-icon.png ">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters collapse " id="searchform" style="">
+                <div class="col-12">
+                    <form action="" method="get" class="w-100 mt-3">
+                        <div class="row no-gutters search-group">
+                            <div class="col-12 col-md-11">
+                                <input type="search" name="search" placeholder="Search Here" class="search-input bg-inverse text-color-a0 col-12">
+                            </div>
+                            <div class="col-12 col-md-1 justify-content-center justify-content-md-end  mt-3 mt-md-0 ">
+                                <button type="submit" class="btn-search text-color-a0 bg-success">Go</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="text-white bg-color-a1 collapse" id="mega-menu">
+
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-2">
+                            <h5 class="text-uppercase font-weight-normal">Cloth</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="">
+                                <a href='#'>Jacket</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="mb-2">
+                            <h5 class="text-uppercase font-weight-normal">Cloth</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="">
+                                <a href='#'>Jacket</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="mb-2">
+                            <h5 class="text-uppercase font-weight-normal">Cloth</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="">
+                                <a href='#'>Jacket</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="mb-2">
+                            <h5 class="text-uppercase font-weight-normal">Cloth</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="">
+                                <a href='#'>Jacket</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="mb-2">
+                            <h5 class="text-uppercase font-weight-normal">Cloth</h5>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="">
+                                <a href='#'>Jacket</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                            <li>
+                                <a href='#'>Sweater</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--    breadcrumb -->
+    <header style="background-color:#fafafa" class="">
+        <div class="container p-0">
+            <ol class="breadcrumb" style="background-color:#fafafa">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Cloth</a></li>
+                <li class="breadcrumb-item"><a href="#">Coat</a></li>
+                <li class="breadcrumb-item active">Rain Coat Double Cufflink Model</li>
+            </ol>
+        </div>
+    </header>
+    <!--   Main Content====================================================-->
+    <main>
+        <div class="container mb-4">
+            <!--       Detail Product-->
+            <div class="row no-gutters mt-4">
+                <!--               picture product-->
+                <div class="col-12 col-md-7">
+                    <div class="row no-gutters w-100">
+                        <!--                       Main picture-->
+                        <div class="col-12 col-lg-10 flex-lg-last border-full-1px-solid border-color-a0">
+                            <div class="d-flex justify-content-center align-items-center w-100">
+                                <img src="img/product/015a.png" class="img-fluid" id="main-image" style="max-height:600px;">
+                            </div>
+                        </div>
+                        <!--                           side picture-->
+                        <div class=" col-12 col-lg-2 flex-lg-first mb-md-0 mb-4" style="display:block">
+                            <div class="row no-gutters ">
+
+                                <div class="col-4 col-sm-3 col-lg-12 border-full-1px-solid border-color-a0 justify-content-center side-picture active" role="button" data-target="side-1">
+                                    <div class="p-2 w-75">
+                                        <img src="img/product/015a.png " class="img-fluid ">
+                                    </div>
+                                </div>
+
+                                <div class="col-4 col-sm-3 col-lg-12 border-full-1px-solid border-color-a0 justify-content-center side-picture" role="button" data-target="side-2">
+                                    <div class="p-2 w-75">
+                                        <img src="img/product/015b.jpg " class="img-fluid ">
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-3 col-lg-12 border-full-1px-solid border-color-a0 justify-content-center side-picture" role="button" data-target="side-3">
+                                    <div class="p-2 w-75">
+                                        <img src="img/product/015a.png " class="img-fluid ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--                Options Product-->
+                <div class="col-12 col-md-5">
+                    <div class="pt-0 pr-2 pb-2 pl-1 pl-md-5">
+                        <!--                       Judul-->
+                        <div class="mb-4 border-full-2px-solid border-top-0 border-left-0 border-right-0 border-color-inverse">
+                            <h1>Rain Coat Double Cufflink Model</h1>
+                        </div>
+                        <!--                        Share-->
+                        <div class="d-flex align-content-center py-2 mb-4 ">
+                            <ul class="list-unstyled list-inline ">
+                                <li class="list-inline-item "><img src="img/icon/facebook.png " width="25px " alt="fb"></li>
+                                <li class="list-inline-item "><img src="img/icon/twitter.png " width="25px " alt="twt"></li>
+                                <li class="list-inline-item "><img src="img/icon/google-plus.png " width="25px " alt="G+"></li>
+                                <li class="list-inline-item "><img src="img/icon/linkedin.png " width="25px " alt="Ln"></li>
+                                <li class="list-inline-item "><img src="img/icon/pinterest.png " width="25px " alt="P"></li>
+                            </ul>
+                        </div>
+                        <!--                        Select color-->
+                        <div class="mb-4 ">
+                            <h6 class="text-uppercase ">Select Color :</h6>
+                            <div class="d-flex align-content-center ">
+                                <ul class="list-unstyled list-inline ">
+                                    <li class="list-inline-item ">
+                                        <div class="p-1 color-select" style="border:1px solid #bfb6bb ">
+                                            <div class="w-100 h-100 " style="background-color:#1e1a17 "></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item ">
+                                        <div class="p-1 color-select" style=" ">
+                                            <div class="w-100 h-100 " style="background-color:#5E2612 "></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item ">
+                                        <div class="p-1 color-select" style=" ">
+                                            <div class="w-100 h-100 " style="background-color:#330000 "></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item ">
+                                        <div class="p-1 color-select" style=" ">
+                                            <div class="w-100 h-100 " style="background-color:#6F4242 "></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--                   Price-->
+                        <div class="mb-5 ">
+                            <h6 class="text-muted font-size-08 text-uppercase ">PRICE:</h6>
+                            <h4>$ 194.00 USD</h4>
+                        </div>
+                        <!--                   Size-->
+                        <div class="mb-5 ">
+                            <select class="custom-select ml-0 mb-1 font-weight-bold " style="border-radius:0; width:100px; border:1px solid #bfb6bb ">
+                                <option selected>SIZE</option>
+                                <option value="1 ">XS</option>
+                                <option value="2 ">S</option>
+                                <option value="3 ">M</option>
+                                <option value="4 ">L</option>
+                                <option value="5 ">XL</option>
+                                <option value="6 ">XXL</option>
+                            </select>
+                            <a href="# " class=" ">
+                                <h6 class="text-muted font-size-08 text-uppercase "><u>Size Chart</u></h6>
+                            </a>
+                        </div>
+                        <!--Button-->
+                        <div class=" ">
+                            <button type="button " class="mb-1 btn py-3 px-5 bg-inverse text-color-a0 text-uppercase font-weight-bold " style="border-radius:0px; ">Add to chart</button>
+                            <a href="# ">
+                                <h6 class="text-uppercase text-muted font-size-08 "><u>Save to Wishlist</u></h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--    Description / Details / shipping -->
+        <div class="container">
+            <div class="my-5">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link text-color-a1  active" data-toggle="tab" href="#deskripsi" role="tab">Description</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-color-a1" data-toggle="tab" href="#detail" role="tab">Details</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-color-a1" data-toggle="tab" href="#shipping" role="tab">Shipping</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-color-a1" data-toggle="tab" href="#other" role="tab">Other</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content font-size-09" style="background-color:#fafafa">
+                    <div class="tab-pane fade show active px-3 py-4 text-color-a2" id="deskripsi" role="tabpanel">
+                        Integer porttitor pulvinar leo id varius. Pellentesque finibus viverra arcu, at tincidunt arcu commodo sagittis. Maecenas vitae arcu sit amet ex suscipit ullamcorper id a nulla. Fusce pretium consequat porta. Nam at pulvinar orci, a elementum turpis. Quisque sed lorem volutpat leo faucibus egestas id ut nibh. Nam dapibus id tellus ac fringilla. Nulla consectetur, urna in vehicula ultrices, diam massa consectetur mauris, a congue libero nibh id massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam condimentum nisi in lobortis imperdiet. Nulla sed orci ipsum. Praesent nec ipsum nunc.
+                    </div>
+                    <div class="tab-pane fade px-3 py-4 text-color-a2" id="detail" role="tabpanel">Detail</div>
+                    <div class="tab-pane fade px-3 py-4 text-color-a2" id="shipping" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin eleifend ultricies. Integer erat nibh, luctus non pharetra eget, consectetur a purus. Duis nibh tortor, sagittis in mi id, sodales elementum nunc. Ut bibendum mi hendrerit, sollicitudin velit a, venenatis enim. In consectetur massa laoreet, aliquet dui nec, ultrices dui. In vestibulum et tellus a tincidunt. Donec leo sem, suscipit nec tellus non, fermentum luctus velit. Mauris facilisis nec eros vitae accumsan. Integer bibendum lobortis enim, vitae porttitor elit mattis et. Nam quis ultrices elit. Nullam eget vehicula metus. Proin rhoncus nulla eget ligula accumsan, et molestie orci aliquet. Praesent pulvinar, dolor ut pharetra fringilla, diam felis congue nunc, et porta felis sem vitae sem. Etiam condimentum faucibus dolor, sit amet blandit justo faucibus sit amet. Sed in varius diam. Proin venenatis diam risus, accumsan viverra nunc pretium at. Nam egestas nulla orci, sit amet molestie magna pretium et. Mauris est libero, ultricies eget neque sit amet, dictum semper augue. Sed vitae mi a risus vestibulum consectetur vitae in quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
+                    <div class="tab-pane fade px-3 py-4 text-color-a2" id="other" role="tabpanel">...</div>
+                </div>
+            </div>
+        </div>
+        <!--        Review ========================================================================================-->
+        <section class="mb-5">
+            <h4 class="text-center">REVIEW</h4>
+            <div class=" mt-5 container">
+                <div class="row no-gutters gutter-20 mb-5">
+                    <div class="col-12 col-sm-4  mb-4 mb-sm-0 justify-content-center">
+                        <div class="row ">
+                            <div class="col-12 mb-4 justify-content-center">
+                                <h5 class="">Rating</h5>
+                            </div>
+                            <div class="col-12  justify-content-center">
+                                <div class="w-75">
+                                    <img class="img-fluid w-100" src="img/rate/Star%204.png" alt="Rating image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4  mb-4 mb-sm-0 justify-content-center">
+                        <div class="row ">
+                            <div class="col-12 mb-4 justify-content-center">
+                                <h5 class="">Reviewers</h5>
+                            </div>
+                            <div class="col-12  justify-content-center">
+                                <h1 class="font-szie-4">3</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4  mb-4 mb-sm-0 justify-content-center">
+                        <div class="row ">
+                            <div class="col-12 mb-4 justify-content-center">
+                                <h5 class="">Give Review</h5>
+                            </div>
+                            <div class="col-12  justify-content-center">
+                                <button role="button" class="btn btn-outline-secondary" style="color:#36393b;width:140px">Log in</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="" style="background-color:#fafafa">
+                <div class="container review py-3">
+                    <div class="row review " style="">
+                        <div class="col-12 col-lg-6 py-3">
+                            <div class="row pb-3 border-full-1px-solid border-color-inverse border-top-0 border-right-0 border-left-0">
+                                <div class="col-12 col-sm-8">
+                                    <div class="row">
+                                        <h3 class="col-12">Name Reviewer</h3>
+                                        <h6 class="col-12 font-size-08">On <span>17 October, 1999</span></h6>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 justify-content-start justify-content-sm-end">
+                                    <div>
+                                        <img class="img-fluid" src="img/rate/Star%200.png" alt="rating give">
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3 mb-2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h6>Comment:</h6>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="font-size-09">"<span>
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin eleifend ultricies. Integer erat nibh, luctus non pharetra eget, consectetur a purus. Duis nibh tortor, sagittis in mi id, sodales elementum nunc. Ut bibendum mi hendrerit, sollicitudin velit a, venenatis enim. In consectetur massa laoreet, aliquet dui nec, ultrices dui. In vestibulum et tellus a tincidunt. Donec leo sem, suscipit nec tellus non, fermentum luctus velit. Mauris facilisis nec eros vitae accumsan. Integer bibendum lobortis enim, vitae porttitor elit mattis et. Nam quis ultrices elit.
+                                </span>"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="">
+                                        <h6 class="font-size-09 d-inline-block">Was the review helpful ?</h6>
+                                        <div class="ml-3 d-inline-block">
+                                            <button class="btn btn-sm btn-secondary border-rad-0" role="button" style="width:40px;">Yes</button>
+                                            <button class="btn btn-sm btn-secondary border-rad-0" role="button" style="width:40px;">No</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="">
+                                        <h6 class="font-size-08 float-right">5 of 5 found this review helpful</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 py-3">
+                            <div class="row pb-3 border-full-1px-solid border-color-inverse border-top-0 border-right-0 border-left-0">
+                                <div class="col-12 col-sm-8">
+                                    <div class="row">
+                                        <h3 class="col-12">Name Reviewer</h3>
+                                        <h6 class="col-12 font-size-08">On <span>17 October, 1999</span></h6>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 justify-content-start justify-content-sm-end">
+                                    <div>
+                                        <img class="img-fluid" src="img/rate/Star%205.png" alt="rating give">
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3 mb-2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h6>Comment:</h6>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="font-size-09">"<span>
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin eleifend ultricies. Integer erat nibh, luctus non pharetra eget, consectetur a purus. Duis nibh tortor, sagittis in mi id, sodales elementum nunc. 
+                                </span>"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="">
+                                        <h6 class="font-size-09 d-inline-block">Was the review helpful ?</h6>
+                                        <div class="ml-3 d-inline-block">
+                                            <button class="btn btn-sm btn-secondary border-rad-0" role="button" style="width:40px;">Yes</button>
+                                            <button class="btn btn-sm btn-secondary border-rad-0" role="button" style="width:40px;">No</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="">
+                                        <h6 class="font-size-08 float-right">5 of 5 found this review helpful</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 py-3">
+                            <div class="row pb-3 border-full-1px-solid border-color-inverse border-top-0 border-right-0 border-left-0">
+                                <div class="col-12 col-sm-8">
+                                    <div class="row">
+                                        <h3 class="col-12">Name Reviewer</h3>
+                                        <h6 class="col-12 font-size-08">On <span>17 October, 1999</span></h6>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 justify-content-start justify-content-sm-end">
+                                    <div>
+                                        <img class="img-fluid" src="img/rate/Star%203.png" alt="rating give">
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3 mb-2">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h6>Comment:</h6>
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="font-size-09">"<span>
+                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin eleifend ultricies. Integer erat nibh, luctus non pharetra eget, consectetur a purus. Duis nibh tortor, sagittis in mi id, sodales elementum nunc. 
+                                </span>"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="">
+                                        <h6 class="font-size-09 d-inline-block">Was the review helpful ?</h6>
+                                        <div class="ml-3 d-inline-block">
+                                            <button class="btn btn-sm btn-secondary border-rad-0" role="button" style="width:40px;">Yes</button>
+                                            <button class="btn btn-sm btn-secondary border-rad-0" role="button" style="width:40px;">No</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="">
+                                        <h6 class="font-size-08 float-right">5 of 5 found this review helpful</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav aria-label="">
+                        <div class="pagination justify-content-end border-rad-0 align-items-center">
+                            <div class="mr-4">
+                                <h6 class="text-color-a1">More Review :</h6>
+                            </div>
+                            <a class="text-color-a1" href="#" tabindex="-1">
+                                <div class="border-full-1px-solid border-inverse" style="padding: 6px 14px">
+                                    &lang;
+                                </div>
+                            </a>
+                            <a class="text-color-a1" href="#">
+                                <div class="mx-3">
+                                    1
+                                </div>
+                            </a>
+                            <a class="text-color-a1" href="#" tabindex="-1">
+                                <div class="border-full-1px-solid border-inverse" style="padding: 6px 14px">
+                                    &rang;
+                                </div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!--        You may also like-->
+        <div class="container mb-4 ">
+            <h4 class="text-center text-uppercase ">You May Also Like</h4>
+            <div class="row no-gutters gutter-20 mt-5 mb-20px">
+
+                <div class="col-6 col-md-3">
+                    <div class="row no-gutters border-full-2px-solid border-color-a0  ">
+                        <div class="col-12 h-75 align-items-center justify-content-center hovereffect1">
+                            <img class="img-fluid p-4" src="img/product/trousers.png" alt=" " />
+                            <div class="overlay d-flex justify-content-center">
+
+                                <h2>Judul</h2>
+
+                                <div class="d-flex align-self-center">
+                                    <a class="info" href="#">view more</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 h-25 justify-content-center align-items-center py-3">
+
+                            <div class="text-center">
+                                <h6>Judul Item</h6>
+                                <h6 class="text-muted font-weight-normal ">$ 000.00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-3">
+                    <div class="row no-gutters border-full-2px-solid border-color-a0  ">
+                        <div class="col-12 h-75 align-items-center justify-content-center hovereffect1">
+                            <img class="img-fluid p-4" src="img/product/Womens-Shoes-psd46358.png" alt=" " />
+                            <div class="overlay d-flex justify-content-center">
+
+                                <h2>Judul</h2>
+
+                                <div class="d-flex align-self-center">
+                                    <a class="info" href="#">view more</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 h-25 justify-content-center align-items-center py-3">
+
+                            <div class="text-center">
+                                <h6>Judul Item</h6>
+                                <h6 class="text-muted font-weight-normal ">$ 000.00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-3  ">
+                    <div class="row no-gutters border-full-2px-solid border-color-a0 ">
+                        <div class="col-12 h-75 align-items-center justify-content-center hovereffect1">
+                            <img class="img-fluid p-4" src="img/product/trousers.png" alt=" " />
+                            <div class="overlay d-flex justify-content-center">
+
+                                <h2>Judul</h2>
+
+                                <div class="d-flex align-self-center">
+                                    <a class="info" href="#">view more</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 h-25 justify-content-center align-items-center py-3">
+
+                            <div class="text-center">
+                                <h6>Judul Item</h6>
+                                <h6 class="text-muted font-weight-normal ">$ 000.00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-md-3 ">
+                    <div class="row no-gutters border-full-2px-solid border-color-a0  ">
+                        <div class="col-12 h-75 align-items-center justify-content-center hovereffect1">
+                            <img class="img-fluid p-4" src="img/product/trousers.png" alt=" " />
+                            <div class="overlay d-flex justify-content-center">
+
+                                <h2>Judul</h2>
+
+                                <div class="d-flex align-self-center">
+                                    <a class="info" href="#">view more</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 h-25 justify-content-center align-items-center py-3">
+
+                            <div class="text-center">
+                                <h6>Judul Item</h6>
+                                <h6 class="text-muted font-weight-normal ">$ 000.00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!--   Footer==============================================-->
+    <footer class="bg-inverse pt-5 ">
+        <div class="container p-0 ">
+            <div class="row m-0 mb-5 pb-3 mb-20px ">
+                <div class="col-12 col-sm-6 col-md-3 text-white justify-content-center justify-content-sm-start text-sm-left text-center ">
+                    <ul class="list-unstyled ">
+                        <li>
+                            <h5>About</h5>
+                        </li>
+                        <li class="pt-3 ">
+                            <ul class="list-unstyled ">
+                                <li>About us</li>
+                                <li>Blog</li>
+                                <li>Career</li>
+                                <li>Seller Stories</li>
+                                <li>About us</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-white justify-content-center justify-content-sm-start text-sm-left text-center ">
+                    <ul class="list-unstyled ">
+                        <li>
+                            <h5>Help</h5>
+                        </li>
+                        <li class="pt-3 ">
+                            <ul class="list-unstyled ">
+                                <li>Terms and Conditions</li>
+                                <li>Privacy Policy</li>
+                                <li>Resolution Center</li>
+                                <li>Contact us</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-white justify-content-center justify-content-sm-start text-sm-left text-center ">
+                    <ul class="list-unstyled ">
+                        <li>
+                            <h5>Support</h5>
+                        </li>
+                        <li class="pt-3 ">
+                            <ul class="list-unstyled ">
+                                <li>Send Ticket</li>
+                                <li>Chat</li>
+                                <li>Costumer Service</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 text-white justify-content-center justify-content-sm-start text-sm-left text-center ">
+                    <ul class="list-unstyled ">
+                        <li>
+                            <h5>Follow</h5>
+                        </li>
+                        <li class="pt-3 ">
+                            <ul class="list-unstyled list-inline ">
+                                <li class="list-inline-item "><img src="img/icon/facebook.png " width="30px "></li>
+                                <li class="list-inline-item "><img src="img/icon/twitter.png " width="30px "></li>
+                                <li class="list-inline-item "><img src="img/icon/google-plus.png " width="30px "></li>
+                                <li class="list-inline-item "><img src="img/icon/linkedin.png " width="30px "></li>
+                                <li class="list-inline-item "><img src="img/icon/pinterest.png " width="30px "></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--    copyright-->
+        <div class="border-top-footer ">
+            <div class="container ">
+                <div class="row m-0 ">
+                    <div class="col h-copyright ">
+                        <p class="text-white text-center " style="margin-top:25px ">&copy; PT. Ayo Techno Idea</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
+    <script src="js/ex.js " type="text/javascript"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
