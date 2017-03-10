@@ -2,35 +2,68 @@ body {
     background-color: #fafafa;
 }
 
-.clicking, .clicking:focus, .clicking:hover, .clicking:active{
+.clicking,
+.clicking:focus,
+.clicking:hover,
+.clicking:active {
     text-decoration: none;
 }
-.clicking:focus, .clicking:hover, .clicking:active{
+
+.clicking:focus,
+.clicking:hover,
+.clicking:active {
+    -webkit-box-shadow: 0 2px 8px #9E9E9E;
+    -moz-box-shadow: 0 2px 8px #9E9E9E;
     box-shadow: 0 2px 8px #9E9E9E;
 }
 
-.page-item.active .page-link{
+.page-item.active .page-link {
     background-color: #EC2534 !important;
     border-color: #EC2534 !important;
     color: #fafafa;
 }
 
-.page-link{
-    color: #475aa8 ;
+.page-link {
+    color: #bdbdbd;
 }
 
- .card .card-block {
-            height: 6.5em;
-            /*            overflow:auto;*/
-        }
-        
-        .card .card-block .judul {
-            margin-bottom: 0.4em;
-            max-height: 2.06em;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            /*            overflow:auto;*/
-        }
+.page-link:hover {
+    background-color: #F5F5F5;
+    color: #EC2534;
+}
+
+.card .card-block {
+    height: 6.5em;
+    /*            overflow:auto;*/
+}
+
+.card .card-block .judul {
+    margin-bottom: 0.4em;
+    max-height: 2.06em;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /*            overflow:auto;*/
+}
+
+.card-judul {
+    margin-bottom: 0.4em;
+    max-height: 2.06em;
+    overflow: hidden;
+}
+
+.vertical-card {
+    text-align: center;
+    display: inline-block !important;
+    padding: 0 0.5em;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.testing:before {
+    height: 100%;
+    vertical-align: middle;
+}
 
 .gutters-small {
     margin: 0px -5px !important;

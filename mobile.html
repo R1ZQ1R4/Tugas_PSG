@@ -68,7 +68,6 @@
         .mr-list-20px>[class^="nav-item "] {
             margin-right: 20px !important;
         }
-
     </style>
 
 </head>
@@ -196,27 +195,47 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Modal -->
-<div class="modal fade" id="cart-form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <div class="fixed d-none w-100" id="cart-form" style="z-index:99">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Amount</h5>
+                        <button type="button" id="close-cart-form" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+                    </div>
+                    <div class="modal-body p-0">
+                       <table class="table">
+                           <thead>
+                               <tr>
+                                   <th>Order</th>
+                                   <th>Product</th>
+                                   <th>Quantity</th>
+                                   <th>Price</th>
+                                   <th></th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                   <th>1</th>
+                                   <th>Sweater black coconut (XL)</th>
+                                   <th>
+                                       <input type="number" value="1">
+                                   </th>
+                                   <th>319.000</th>
+                                   <th>&copy;</th>
+                               </tr>
+                           </tbody>
+                       </table>
+                    </div>
+                    <div class="modal-footer">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--       Navbar =====================================-->
         <nav class="navbar sticky-top bg-me-5 container mx-auto w-100 clearfix" style="z-index:1; max-width:576px; height:60px">
@@ -239,7 +258,7 @@
 
                     <div class="d-flex align-self-center">
 
-                        <button type="button" class="border-0 bg-none px-3 pt-1 text-2" id="cart-btn" data-toggle="modal" data-target="#cart-form">
+                        <button type="button" class="border-0 bg-none px-3 pt-1 text-2" id="cart-btn">
                        <svg class="icon-cart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
 <path d="M31.914 5.4l-2.914 11.6c0 0.139-0.028 0.27-0.078 0.389-0.102 0.24-0.293 0.432-0.532 0.533-0.12 0.051-0.252 0.078-0.39 0.078h-19l0.8 4h17.2c0.553 0 1 0.447 1 1s-0.447 1-1 1h-18c-0.553 0-1-0.447-1-1l-3.8-19h-3.2c-0.552 0-1-0.448-1-1s0.448-1 1-1h4c0.553 0 1 0.448 1 1l0.2 1h24.8c0.553 0 1 0.448 1 1 0 0.143-0.032 0.277-0.086 0.4zM8.6 16h3.4v-10h-5.4l2 10zM18 6h-5v10h5v-10zM24 6h-5v10h5v-10zM25 6v10h2.253l2.533-10h-4.786zM11 26c1.657 0 3 1.344 3 3s-1.343 3-3 3-3-1.344-3-3 1.343-3 3-3zM11 30c0.553 0 1-0.447 1-1s-0.447-1-1-1-1 0.447-1 1 0.447 1 1 1zM25 26c1.657 0 3 1.344 3 3s-1.343 3-3 3-3-1.344-3-3 1.343-3 3-3zM25 30c0.553 0 1-0.447 1-1s-0.447-1-1-1-1 0.447-1 1 0.447 1 1 1z"></path>
 </svg>
@@ -258,6 +277,8 @@
 
             </div>
         </nav>
+        
+<!--        seearch form-->
         <div class="relative w-100">
             <div class="absolute w-100 d-none" id="search-form">
                 <form method="post" class="input-group subscribe w-100" action="">
@@ -303,154 +324,163 @@
                 <div class="row no-gutters gutter-1em mb-1em">
 
                     <div class="col-6">
-<a class="clicking w-100" href="#">
-                       <div class="card w-100 rounded-0">
-                          <div class="bg-me-5">
-                               <h5 class="size-0100 my-075 text-center text-white">T-Shirt</h5>
-                           </div>
-                          <img class="w-75 m-auto px-1 py-110" src="img/icon/category/shirt.svg" alt="category1">      
-                       </div>
-                       </a>
+                        <a class="clicking w-100" href="#">
+                            <div class="card w-100 rounded-0">
+                                <div class="bg-me-5">
+                                    <h5 class="size-0100 my-075 text-center text-white">T-Shirt</h5>
+                                </div>
+                                <img class="w-75 m-auto px-1 py-110" src="img/icon/category/shirt.svg" alt="category1">
+                            </div>
+                        </a>
                     </div>
 
                     <div class="col-6  ">
-                       <a class="clicking w-100" href="#">
-                        <div class="card w-100 rounded-0">
-                           <div class="bg-me-5">
-                                <h5 class="size-0100 my-075 text-center text-white">Underwear</h5>
+                        <a class="clicking w-100" href="#">
+                            <div class="card w-100 rounded-0">
+                                <div class="bg-me-5">
+                                    <h5 class="size-0100 my-075 text-center text-white">Underwear</h5>
+                                </div>
+                                <img class="w-75 m-auto px-1 py-110" src="img/icon/category/underwear-1.svg" alt="category1">
                             </div>
-                           <img class="w-75 m-auto px-1 py-110" src="img/icon/category/underwear-1.svg" alt="category1">
-                        </div>
                         </a>
                     </div>
 
                     <div class="col-6 ">
-                       <a class="clicking w-100" href="#">
-                        <div class="card w-100 rounded-0">
-                            <div class="bg-me-5">
-                                <h5 class="size-0100 my-075 text-center text-white">Pants</h5>
+                        <a class="clicking w-100" href="#">
+                            <div class="card w-100 rounded-0">
+                                <div class="bg-me-5">
+                                    <h5 class="size-0100 my-075 text-center text-white">Pants</h5>
+                                </div>
+                                <img class="w-75 m-auto px-1 py-110" src="img/icon/category/pants.svg" alt="category1">
                             </div>
-                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/pants.svg" alt="category1">     
-                        </div>
                         </a>
                     </div>
 
                     <div class="col-6 ">
-                       <a class="clicking w-100" href="#">
-                           <div class="card w-100 rounded-0">
-                            <div class="bg-me-5">
-                                <h5 class="size-0100 my-075 text-center text-white">Jeans</h5>
+                        <a class="clicking w-100" href="#">
+                            <div class="card w-100 rounded-0">
+                                <div class="bg-me-5">
+                                    <h5 class="size-0100 my-075 text-center text-white">Jeans</h5>
+                                </div>
+                                <img class="w-75 m-auto px-1 py-110" src="img/icon/category/jeans.svg" alt="category1">
+
                             </div>
-                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/jeans.svg" alt="category1">
-                            
-                        </div>
                         </a>
                     </div>
 
                     <div class="col-6 ">
-                       <a class="clicking w-100" href="#">
-                        <div class="card w-100 rounded-0">
-                            <div class="bg-me-5">
-                                <h5 class="size-0100 my-075 text-center text-white">Skirt</h5>
+                        <a class="clicking w-100" href="#">
+                            <div class="card w-100 rounded-0">
+                                <div class="bg-me-5">
+                                    <h5 class="size-0100 my-075 text-center text-white">Skirt</h5>
+                                </div>
+                                <img class="w-75 m-auto px-1 py-110" src="img/icon/category/skirt.svg" alt="category1">
+
                             </div>
-                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/skirt.svg" alt="category1">
-                            
-                        </div></a>
+                        </a>
                     </div>
 
                     <div class="col-6 ">
-                       <a class="clicking w-100" href="#">
-                        <div class="card w-100 rounded-0">
-                            <div class="bg-me-5">
-                                <h5 class="size-0100 my-075 text-center text-white">Jacket</h5>
+                        <a class="clicking w-100" href="#">
+                            <div class="card w-100 rounded-0">
+                                <div class="bg-me-5">
+                                    <h5 class="size-0100 my-075 text-center text-white">Jacket</h5>
+                                </div>
+                                <img class="w-75 m-auto px-1 py-110" src="img/icon/category/jacket.svg" alt="category1">
+
                             </div>
-                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/jacket.svg" alt="category1">
-                            
-                        </div></a>
+                        </a>
                     </div>
 
                 </div>
 
                 <div class="d-none row no-gutters gutter-1em mb-1em animated" id="catalog">
-                    
-                     <div class="col-6 ">
-                       <a class="clicking w-100" href="#">
-                        <div class="card w-100 rounded-0">
-                            <div class="bg-me-5">
-                                <h5 class="size-0100 my-075 text-center text-white">Backpack</h5>
+
+                    <div class="col-6 ">
+                        <a class="clicking w-100" href="#">
+                            <div class="card w-100 rounded-0">
+                                <div class="bg-me-5">
+                                    <h5 class="size-0100 my-075 text-center text-white">Backpack</h5>
+                                </div>
+                                <img class="w-75 m-auto px-1 py-110" src="img/icon/category/backpack.svg" alt="category1">
+
                             </div>
-                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/backpack.svg" alt="category1">
-                            
-                         </div></a>
+                        </a>
                     </div>
-                    
-                     <div class="col-6 ">
-                       <a class="clicking w-100" href="#">
-                        <div class="card w-100 rounded-0">
-                            <div class="bg-me-5">
-                                <h5 class="size-0100 my-075 text-center text-white">Gloves</h5>
+
+                    <div class="col-6 ">
+                        <a class="clicking w-100" href="#">
+                            <div class="card w-100 rounded-0">
+                                <div class="bg-me-5">
+                                    <h5 class="size-0100 my-075 text-center text-white">Gloves</h5>
+                                </div>
+                                <img class="w-75 m-auto px-1 py-110" src="img/icon/category/gloves.svg" alt="category1">
+
                             </div>
-                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/gloves.svg" alt="category1">
-                            
-                         </div></a>
+                        </a>
                     </div>
-                    
-                     <div class="col-6 ">
-                       <a class="clicking w-100" href="#">
-                        <div class="card w-100 rounded-0">
-                            <div class="bg-me-5">
-                                <h5 class="size-0100 my-075 text-center text-white">Shoe</h5>
+
+                    <div class="col-6 ">
+                        <a class="clicking w-100" href="#">
+                            <div class="card w-100 rounded-0">
+                                <div class="bg-me-5">
+                                    <h5 class="size-0100 my-075 text-center text-white">Shoe</h5>
+                                </div>
+                                <img class="w-75 m-auto px-1 py-110" src="img/icon/category/shoe.svg" alt="category1">
+
                             </div>
-                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/shoe.svg" alt="category1">
-                            
-                         </div></a>
+                        </a>
                     </div>
-                    
-                     <div class="col-6 ">
-                       <a class="clicking w-100" href="#">
-                        <div class="card w-100 rounded-0">
-                            <div class="bg-me-5">
-                                <h5 class="size-0100 my-075 text-center text-white">Coat</h5>
+
+                    <div class="col-6 ">
+                        <a class="clicking w-100" href="#">
+                            <div class="card w-100 rounded-0">
+                                <div class="bg-me-5">
+                                    <h5 class="size-0100 my-075 text-center text-white">Coat</h5>
+                                </div>
+                                <img class="w-75 m-auto px-1 py-110" src="img/icon/category/coat.svg" alt="category1">
+
                             </div>
-                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/coat.svg" alt="category1">
-                            
-                         </div></a>
+                        </a>
                     </div>
-                    
-                     <div class="col-6 ">
-                       <a class="clicking w-100" href="#">
-                        <div class="card w-100 rounded-0">
-                            <div class="bg-me-5">
-                                <h5 class="size-0100 my-075 text-center text-white">Belt</h5>
+
+                    <div class="col-6 ">
+                        <a class="clicking w-100" href="#">
+                            <div class="card w-100 rounded-0">
+                                <div class="bg-me-5">
+                                    <h5 class="size-0100 my-075 text-center text-white">Belt</h5>
+                                </div>
+                                <img class="w-75 m-auto px-1 py-110" src="img/icon/category/belt.svg" alt="category1">
+
                             </div>
-                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/belt.svg" alt="category1">
-                            
-                         </div></a>
+                        </a>
                     </div>
-                    
-                     <div class="col-6 ">
-                       <a class="clicking w-100" href="#">
-                        <div class="card w-100 rounded-0">
-                            <div class="bg-me-5">
-                                <h5 class="size-0100 my-075 text-center text-white">Umberella</h5>
+
+                    <div class="col-6 ">
+                        <a class="clicking w-100" href="#">
+                            <div class="card w-100 rounded-0">
+                                <div class="bg-me-5">
+                                    <h5 class="size-0100 my-075 text-center text-white">Umberella</h5>
+                                </div>
+                                <img class="w-75 m-auto px-1 py-110" src="img/icon/category/umbrella.svg" alt="category1">
+
                             </div>
-                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/umbrella.svg" alt="category1">
-                            
-                         </div></a>
+                        </a>
                     </div>
-                    
-                     <div class="col-6 ">
-                       <a class="clicking w-100" href="#">
-                        <div class="card w-100 rounded-0">
-                            <div class="bg-me-5">
-                                <h5 class="size-0100 my-075 text-center text-white">Socks</h5>
+
+                    <div class="col-6 ">
+                        <a class="clicking w-100" href="#">
+                            <div class="card w-100 rounded-0">
+                                <div class="bg-me-5">
+                                    <h5 class="size-0100 my-075 text-center text-white">Socks</h5>
+                                </div>
+                                <img class="w-75 m-auto px-1 py-110" src="img/icon/category/socks.svg" alt="category1">
+
                             </div>
-                            <img class="w-75 m-auto px-1 py-110" src="img/icon/category/socks.svg" alt="category1">
-                            
-                         </div></a>
+                        </a>
                     </div>
-                    
-      
+
+
 
                 </div>
 
@@ -467,8 +497,8 @@
 
             <!--           promo-->
             <section class="my-180 shadow-3">
-               <a class="" href="#">
-                <img class="img-fluid" src="img/banner/BEE-1734-Fashion%20Sale%20Banners_01_Preview3.jpg" alt="promo" />
+                <a class="" href="#">
+                    <img class="img-fluid" src="img/banner/BEE-1734-Fashion%20Sale%20Banners_01_Preview3.jpg" alt="promo" />
                 </a>
             </section>
 
@@ -482,141 +512,150 @@
                         <div class="swiper-container-recommended">
                             <div class="swiper-wrapper">
 
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/2.png" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">Brown bear sweater</h5>
-                                            </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 120.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10"></s></span>
-                                            </h5>
-                                            <div class="product-rating" data-rating="4.5"></div>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/5.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">Jumper suit baby full set. Black white color</h5>
-                                            </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 169.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">Rp 219.000</s></span></h5>
-                                            <div class="product-rating" data-rating="3.5"></div>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/3.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">Flat skirt all color</h5>
-                                            </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 69.900
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">Rp 140.000</s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/4.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">Yellow cloth with love mom text for your childern to you</h5>
-                                            </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 78.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">128.000</s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/6.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">Blackberry Aurora C100-1</h5>
-                                            </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 3.499.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10"></s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/7.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">HUROM HZ SERIES NEW</h5>
-                                            </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 6.100.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">7.500.00</s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/8.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">Buku "A Man Called" #AHOK - Sepenggal Kisah Perjuangan & Ketulusan</h5>
-                                            </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 72.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10"></s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/9.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">GAMIS POLOS SUPER JERSEY</h5>
-                                            </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 79.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">3.099.900</s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
-                                        </div>
-                                    </div>
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/10.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">[All Size] Korean Long Chiffon Skirt Rok Panjang Wanita RK049
-
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/2.png" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">Brown bear sweater</h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 120.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10"></s></span>
                                                 </h5>
+                                                <div class="product-rating" data-rating="4.5"></div>
                                             </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 49.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">69.000</s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
                                         </div>
-                                    </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/5.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">Jumper suit baby full set. Black white color</h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 169.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">Rp 219.000</s></span></h5>
+                                                <div class="product-rating" data-rating="3.5"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/3.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">Flat skirt all color</h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 69.900
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">Rp 140.000</s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/4.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">Yellow cloth with love mom text for your childern to you</h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 78.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">128.000</s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/6.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">Blackberry Aurora C100-1</h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 3.499.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10"></s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/7.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">HUROM HZ SERIES NEW</h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 6.100.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">7.500.00</s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/8.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">Buku "A Man Called" #AHOK - Sepenggal Kisah Perjuangan & Ketulusan</h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 72.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10"></s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/9.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">GAMIS POLOS SUPER JERSEY</h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 79.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">3.099.900</s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/10.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">[All Size] Korean Long Chiffon Skirt Rok Panjang Wanita RK049
+
+                                                    </h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 49.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">69.000</s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
+                                            </div>
+                                        </div>
                                     </a>
                                 </div>
 
@@ -650,66 +689,70 @@
                         <div class="swiper-container-recommended">
                             <div class="swiper-wrapper">
 
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/12.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">Gamis Simple Katun Colour
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/12.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">Gamis Simple Katun Colour
 
-                                                </h5>
+                                                    </h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 60.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">120.000</s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
                                             </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 60.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">120.000</s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
                                         </div>
-                                    </div>
                                     </a>
                                 </div>
 
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/4.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">Yellow cloth with love mom text for your childern to you</h5>
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/4.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">Yellow cloth with love mom text for your childern to you</h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 78.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">128.000</s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
                                             </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 78.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">128.000</s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
                                         </div>
-                                    </div>
                                     </a>
                                 </div>
 
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/6.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">Blackberry Aurora C100-1</h5>
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/6.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">Blackberry Aurora C100-1</h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 3.499.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10"></s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
                                             </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 3.499.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10"></s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
                                         </div>
-                                    </div>
                                     </a>
                                 </div>
 
 
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/8.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">Buku "A Man Called" #AHOK - Sepenggal Kisah Perjuangan & Ketulusan</h5>
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/8.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">Buku "A Man Called" #AHOK - Sepenggal Kisah Perjuangan & Ketulusan</h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 72.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10"></s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
                                             </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 72.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10"></s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
                                         </div>
-                                    </div>
                                     </a>
                                 </div>
 
@@ -718,9 +761,9 @@
                         </div>
 
                     </div>
-                    
+
                 </div>
-                
+
                 <ul class="pagination pagination-sm justify-content-end">
                     <li class="page-item  active">
                         <a class="page-link" href="#">1 </a></li>
@@ -743,82 +786,87 @@
                         <div class="swiper-container-recommended">
                             <div class="swiper-wrapper">
 
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/8.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">Buku "A Man Called" #AHOK - Sepenggal Kisah Perjuangan & Ketulusan</h5>
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/8.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">Buku "A Man Called" #AHOK - Sepenggal Kisah Perjuangan & Ketulusan</h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 72.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10"></s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
                                             </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 72.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10"></s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
                                         </div>
-                                    </div>
                                     </a>
                                 </div>
 
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/9.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">GAMIS POLOS SUPER JERSEY</h5>
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/9.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">GAMIS POLOS SUPER JERSEY</h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 79.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">3.099.900</s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
                                             </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 79.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">3.099.900</s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
                                         </div>
-                                    </div>
                                     </a>
                                 </div>
 
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/10.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">[All Size] Korean Long Chiffon Skirt Rok Panjang Wanita RK049
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/10.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">[All Size] Korean Long Chiffon Skirt Rok Panjang Wanita RK049
 
-                                                </h5>
+                                                    </h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 49.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">69.000</s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
                                             </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 49.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">69.000</s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
                                         </div>
-                                    </div>
                                     </a>
                                 </div>
 
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/12.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">Gamis Simple Katun Colour
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/12.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">Gamis Simple Katun Colour
 
-                                                </h5>
+                                                    </h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 60.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">120.000</s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
                                             </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 60.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">120.000</s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
                                         </div>
-                                    </div>
                                     </a>
                                 </div>
 
-                                <div class="swiper-slide"><a class="clicking w-100" href="#">
-                                    <div class="card rounded-0">
-                                        <img class="img-fluid" src="img/product/700/4.jpg" alt="related product">
-                                        <div class="card-block p-2">
-                                            <div class="judul">
-                                                <h5 class="size-095 m-0 mb-2 ">Yellow cloth with love mom text for your childern to you</h5>
+                                <div class="swiper-slide">
+                                    <a class="clicking w-100" href="#">
+                                        <div class="card rounded-0">
+                                            <img class="img-fluid" src="img/product/700/4.jpg" alt="related product">
+                                            <div class="card-block p-2">
+                                                <div class="judul">
+                                                    <h5 class="size-095 m-0 mb-2 ">Yellow cloth with love mom text for your childern to you</h5>
+                                                </div>
+                                                <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 78.000
+                                                    <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">128.000</s></span></h5>
+                                                <div class="product-rating" data-rating="5"></div>
                                             </div>
-                                            <h5 class="size-090 m-0 mb-1 text-costum-4">Rp. 78.000
-                                                <span class="text-1 size-070 font-weight-normal"><s class="d-inline-block text-10">128.000</s></span></h5>
-                                            <div class="product-rating" data-rating="5"></div>
                                         </div>
-                                    </div>
                                     </a>
                                 </div>
 
@@ -829,7 +877,7 @@
                         </div>
 
                     </div>
-                    
+
                 </div>
                 <ul class="pagination pagination-sm justify-content-end">
                     <li class="page-item  active">
@@ -850,8 +898,8 @@
 
             <!--     banner  -->
             <section class="my-180 shadow-3">
-               <a class="" href="#">
-                <img class="img-fluid" src="img/banner/SAVE-THE-DATE_Web-banner-size-for-web.jpg" alt="banner">
+                <a class="" href="#">
+                    <img class="img-fluid" src="img/banner/SAVE-THE-DATE_Web-banner-size-for-web.jpg" alt="banner">
                 </a>
             </section>
         </main>
@@ -928,6 +976,11 @@
             $('#side-menu').toggleClass('d-none');
             $('#search-form').addClass('d-none');
         });
+        $('#cart-btn').click(function() {
+            $('#cart-form').toggleClass('d-none');
+            $('#search-form').addClass('d-none');
+            $('#side-menu').addClass('d-none');
+        });
 
         $('#search-btn').click(function() {
             $('#search-form').toggleClass('d-none');
@@ -936,6 +989,10 @@
         $('#close-side-menu').click(function(e) {
             e.preventDefault;
             $('#side-menu').toggleClass('d-none');
+        });
+        $('#close-cart-form').click(function(e) {
+            e.preventDefault;
+            $('#cart-form').addClass('d-none');
         });
 
         $('.product-rating').starRating({
@@ -965,7 +1022,6 @@
             loop: true,
             autoplay: 5000
         });
-
     </script>
 </body>
 

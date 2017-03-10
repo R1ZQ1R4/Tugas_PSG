@@ -159,6 +159,10 @@ font2
     fill: $mono-3
     @extend %opa-d-2
 .text-
+    
+    &fa
+        +text-color($grey-50)
+    
     &breadcrumb1
         +text-color($color-costum-8)
         @extend %opa-l-3
@@ -220,23 +224,36 @@ font2
         fill: $color-costum-6
     &success
     +text-color($green-600)
-    
+
+$costum-2-dark: darken( $color-costum-2, 10% )
+$costum-3-dark: darken( $color-costum-3, 10% )
+$costum-4-dark: darken( $color-costum-4, 10% )
+
 .btn-
     &me-
         &1
             +border(1px, solid)
             +colors(none, $teal-800, $teal-900)
-  
-            &:hover, &:active, &:focus
-
+            &:hover, &:active, &:focus, &.active
                 +colors($teal-800, $teal-900, $mono-f)
-            
+    
         &2
             +border(1px, solid)
-            +colors($teal-800, $teal-900, $grey-100)
-            &:hover, &:active, &:focus
-                +colors($teal-900, $teal-800, $grey-50)
+            +colors($color-costum-2, $color-costum-2, $grey-100)
+            &:hover, &:active, &:focus, &.active
+                +colors($costum-2-dark, $costum-2-dark, $grey-50)
+        &3
+            +border(1px, solid)
+            +colors($color-costum-3, $color-costum-3, $grey-100)
+            &:hover, &:active, &:focus, &.active
+                +colors($costum-3-dark, $costum-3-dark, $grey-50)
 
+        &4
+            +border(1px, solid)
+            +colors($color-costum-4, $color-costum-4, $grey-100)
+            &:hover, &:active, &:focus, &.active
+                +colors($costum-4-dark, $costum-4-dark, $grey-50)
+       
 
 .shadow-
     &1
