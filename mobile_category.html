@@ -422,7 +422,7 @@
         </div>
 
         <!-- Modal -->
-        <div class="fixed d-none w-100" id="cart-form" style="z-index:99">
+        <div class="fixed d-none w-100 mx-auto" id="cart-form" style="z-index: 99; max-width: 576px;">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -432,14 +432,13 @@
         </button>
                     </div>
                     <div class="modal-body p-0">
-                        <table class="table">
+                        <table class="table table-responsive table-stripped">
                             <thead>
                                 <tr>
                                     <th>Order</th>
                                     <th>Product</th>
                                     <th>Quantity</th>
                                     <th>Price</th>
-                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -450,9 +449,16 @@
                                         <input class="form-control" type="number" value="1">
                                     </td>
                                     <td>319.000</td>
-                                    <td>&copy;</td>
                                 </tr>
                             </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th></th>
+                                    <th colspan="1">Total</th>
+                                    <th></th>
+                                    <th>Rp. 999.000</th>
+                                </tr>
+                            </tfoot>
                         </table>
                     </div>
                     <div class="modal-footer">
@@ -518,15 +524,15 @@
         <!--        main-->
         <main class="">
             <!--          category where / breaadcrumb + listing =================================-->
-            <section class="my-180 mt-0 bg-white">
-                <div class="container py-110 shadow-3" style="">
+            <section class="my-180 mt-0 bg-white  shadow-3">
+                <div class="container py-110" style="">
 
                     <h3 class="text-center mb-4 text-costum-4">T-Shirt</h3>
 
                     <div class="row no-gutters gutter-1em mb-05em">
                         <!--                 filter-->
                         <div class="col w-100">
-                            <button class="btn btn-sm btn-me-3 text-left btn-block arrow text-fa pr-5" id="filter-btn">
+                            <button class="btn btn-sm btn-me-3 text-left btn-block text-fa pr-5" id="filter-btn">
                             <svg class="filter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
                                 <path d="M0 0h24v24H0z" fill="none"/>
@@ -539,7 +545,7 @@
                         <!--                  sorting-->
                         <div class="col w-100">
 
-                            <button class="btn btn-sm btn-me-3 text-left btn-block arrow text-fa pr-5" id="sort-btn">
+                            <button class="btn btn-sm btn-me-3 text-left btn-block text-fa pr-5" id="sort-btn">
                                       <svg class="filter-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                                       <path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"/>
                                                                       <path d="M0 0h24v24H0z" fill="none"/>
