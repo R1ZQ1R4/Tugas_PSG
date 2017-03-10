@@ -31,7 +31,18 @@ body {
     background-color: #F5F5F5;
     color: #EC2534;
 }
-
+.radio-desc-me-1{
+    color: #bdbdbd;
+    margin-top: -2px;
+    font-size: 1.2em;
+    margin-left: 0.5em;
+}
+input[type='checkbox']:checked ~ .radio-desc-me-1{
+    color: #333 !important;
+}
+input[type='radio']:checked ~ .radio-desc-me-1{
+    color: #333 !important;
+}
 .card .card-block {
     height: 6.5em;
     /*            overflow:auto;*/
